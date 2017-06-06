@@ -1,0 +1,567 @@
+--Comment line starts with 2 – 
+--
+-- Format of each line should be:
+-- username; L|X; description
+--  L == Like pattern matching starting from the beginning and matching all characters
+--  X == Exact has to match 100% - full user names only
+-- 
+-- 2013.05.14 - clean up grouping and order. Need to schedule review of accounts listed.
+--  May run showed 440 accounts were skipped for matching the this list
+
+-- Corporate
+acsadmin; X; cisco secureworks admin account for services on gaslrad01
+Admintest; x;
+Admintest2; x;
+administrator; X;
+adp-srv; x; Account to log into gasladp10, no anti-virus install
+amcadmin; X; mobility center account
+apache; X; apache web servers
+atrsimmons; X;
+autocopy; X; FILE MOVER IN ATLANTA USED BY !!!EVERYTHING UNDER THE SUN!!!!
+AVG; X;
+ITConferenceRoom2; x;
+PCI_service; x;
+Peak10Support; X; Support account for Peak10
+nvreoperations; x;
+nvrewatchdog; x;
+memphiscareers; X; email account requested by IT-NOC 19Oct2015
+younameit; x; Mailbox for the New Name of Company
+wmtest; x;
+
+
+bcrane; X; 2013.05.14 - account not found
+besadmin; X; DO NOT REMOVE !!! DO NOT CHANGE!!! Blackberry Professional Account for Blackberry phones (SCOTT)
+bhart; X; Enterprise Clients \ Solutions Staffing 
+bkoechling; X; European account
+brittany.hart; X; 2013.05.14 - old WizmoWorks account I think?
+bscrm1; X; CRMS client service account - 2013.05.14 - account not found
+
+Charles.Davis; X; 2013.05.14 - account not found
+Chrissy.Herren; X; 2013.05.14 - old WizmoWorks account I think?
+cwremote1; X; 2013.05.14 - disabled enterprise account
+
+daclients; X; 2013.05.14 - account not found
+Dave.Klocek; X; 2013.05.14 - old WizmoWorks account I think?
+DCS_COPU; L; used by DCS deployment
+Disney; X;
+disneyprinter; X;
+
+ed.pilot; X; Ed Pilot Wizmoworks account 2013.05.14 - account not found
+EUQ; L; domain account for Exchange
+
+facebook; X; facebook service account
+Frontdesk1; X;
+
+ghost; L; typically used by sites for their ghost servers and service account
+
+helpdeskform; X; This account is required for the helpdesk web app to send e-mails
+Helpdesk; X;
+hire.dynamics; X; 2013.05.14 - WizmoWorks acccount ??
+
+Innotrac_jobs; X;
+INNOTRACCORP$; X;
+ITConferenceRoom; X;
+it conference room; x;
+IUSR_; L; domain service accounts
+IWAM_; L; domain service accounts
+
+java; X;
+jobs-; L; account mailboxes for each sites HR deptartment for applicants to email resumes
+
+kristi.doughty; X; 2013.05.14 - WizmoWorks acccount ??
+kristy.jackson; X; 2013.05.14 - WizmoWorks acccount ??
+kyle.magolan; X; etime account
+Laurie.Ryan; X; 2013.05.14 - WizmoWorks acccount ??
+
+lipozene; X; 2013.05.14 Reno Mailbox account
+lisa.bedinghaus; X; 2013.05.14 - WizmoWorks acccount ??
+LiveID; X; serice account for Windows Live ID ???
+llambert; X; European account
+Lois.Dumke; X; 2013.05.14 - account not found
+Lynn.Shugrue; X; 2013.05.14 - WizmoWorks acccount ??
+
+ma; X; manhattan associates account
+mailquery; X;
+Mailroom; X;
+mark.sanford; X;
+Marketing; X;
+marty.lynch; X; etime account
+MAS90service; X;
+mgross; X;
+michael.barela; X;
+mindy.dorfman; X;
+ms; x; Diagnostic ID for Microsoft to VPN into Innotrac
+MYork; X;
+mercy.yorke; X;
+
+nathan.krueger; X;
+nvreoperations; X;
+nvrewatchdog; X;
+
+ow_working_mde; X;
+
+paul.jenemann; X;
+plotze; X;
+Porsche-Close; X;
+porscheselection; X;
+
+qualtrax; X; Quality SQL logon in Atlanta
+Qwestreports; X;
+
+renotestftp; X;
+RNOINOC$; X;
+RNOTEST$; X;
+ron2; X; Ron Margerum's other account. This getting disabled for some reasons causes problems with LDAP queries. not sure why ??
+RunAs; X; used by sms scripts on gaslsms01
+
+sales; X;
+scott1; X;
+security; X;
+serv-exch; X; Enterprise Exchange logon
+serv-sql; X;
+serv-sql2; X;
+serv-wmethods; X;
+serv-xchgadmin; X;
+s-exchange; X;
+silas.hamedi; X;
+sitel; X;
+smartlabel; X; Smart Label workstation logon ID
+smsservice; X; service account for SMS
+s-ntmon; X; hp top tools user account
+Spam; X;
+spanx; X;
+Spanx_files; X; webmethods POP3 user login for Exchange mailbox
+sqladmin; x;
+sqladmin2; x;
+srv-pkweb; X; 
+srv-wmos; X; EIS & WMOS service admin account
+S-SQLService; X; Used for SQL backups
+
+targetccsupport; X;
+targetsav02; X;
+testservice; X;
+thane_billing; X;
+TM_OSCE_; L; Trend junk
+TsInternetUser; X; This user account is used by Terminal Services
+tssalerts; L; used for alerting names have -<SITE> after them
+
+unix; L; unix accounts that we don't want to touch
+uxpradhan; X;
+uxm; X; unix monitor email and windows account
+uxmtester; X; unix monitor for ldap queries
+
+Veronica.Merrick; X;
+vickie.bennett; X;
+vterra1; X;
+vterra2; X;
+vterra3; X;
+virus; X; user mailbox where users can send virus mail that makes it through Justin's filters mail servers
+
+weblogic; X;
+Webmaster; X;
+
+Zumebar; X;
+
+-- Ohio
+ohsvc; X; service account used in ohio
+runaspro; x; service account used for RunAsPro application for elevated access on-demand for users
+chelpdesk; X; columbus helpdesk account
+mantissa; X; this is used by Mantissa for VPN to support the tilt tray sorter in Grove City Ohio
+--rcantor; X; commented out 2013.05.14
+--rudeal; X; commented out 2013.05.14
+--fross; X; commented out 2013.05.14
+C2ASOS; L; ASOS pack station user accounts in Col2 / Grove Port
+
+-- Pueblo
+100%Male; X; 
+abdoersupport; x;
+aqm; x;
+Aquatru; x;
+arris; x;
+arrisclient; x;
+arristraining; x;
+AspectAdmin; x;
+Aspect01; X; service accounts Vortalsoft 
+Aspect02; X; service accounts Vortalsoft 
+Aspect03; X; service accounts Vortalsoft 
+Aspect04; X; service accounts Vortalsoft 
+attcr; x; AT&T Credit Requests
+atthle; X; AT&T Hot Line Escalations
+
+bizhub282; x;
+bizhub350; x;
+bizhub601; x;
+BS Executive Hotline; x;
+
+Cebria; x;
+CharmingCharlie; x;
+charmingcharlieib; X; added sept.21 per Jan for UIP
+charmingcharlieob; X; added sept.21 per Jan for UIP
+charmingcharliervw; X; added sept.21 per Jan for UIP
+cladmen; x;
+Cladchatbox; X; 
+clavehelp; X;
+comfortissejeggings; X;
+concierge; x;
+copumcpc01; x;
+crcprint; x;
+crcqa; x;
+crcustserv; x;
+crcthane; x;
+crsmartpost; x; CR Smart Post
+crdelivery; X; 
+crossoverabs; x;
+crinbound; X; added sept.21 per Jan for UIP
+croutbound; X; added sept.21 per Jan for UIP
+crreview; X; added sept.21 per Jan for UIP
+customreplytest; x;
+
+dankameters; x;
+debtcure; L; Debt Cures CRC email accounts
+DermaWOW; X;
+dhaicrc; x;
+dotscs; x; Pueblo CRC mail user
+DOTSSmartpost; x; Pueblo CRC email user
+
+egaintest; x;
+ELOQUII; X;
+eolquiiib; X; added sept.21 per Jan for UIP
+eloquiiob; X; added sept.21 per Jan for UIP
+eloquiirvw; X; added sept.21 per Jan for UIP
+EzClear; X; added 10.mar.2016 per Jan
+
+--freemoneypri; x;
+--freemoney2012; x;
+ferrarics; X; email account for Ferrari CS
+financialfreedom; x;
+freemoney; L; free money CRC email accounts
+
+ghbasschatbox; X; GHBass Chatbox
+GHBassHelps; X;
+ghbasshelpib; X; added sept.21 per Jan for UIP
+ghbasshelpob; X; added sept.21 per Jan for UIP
+ghbasshelprvw; X; added sept.21 per Jan for UIP
+ghbasshelp; X;
+gsnaturalnews; X;
+
+
+Historic Mint Coint; x;
+hrapp1; X;
+hrconf; X;
+HRtemp; x;
+HRTest; L;
+
+igsroot; x;
+igwt; x;
+pilmadverse; x;
+INOCShopkoissue; x;
+INOCELQIssue; x;
+
+JCore; X; 
+JFKCoin; x;
+jlpcs; x;
+jlpescalations; x;
+justicecoin; x;
+justrepelit; x;
+
+karllagerfeldparishelp; X; added 08.12.2016 per Jan
+kowa; X; added 05.12.2016 Jan
+
+LemonPop; X;
+LRJS; x;
+ltduser; x;
+
+mintingmillions; x;
+mo'doherty; x;
+motobbadherence; x;
+motoclient; x;
+motoea; x;
+motorola; x;
+mototraining; x;
+motoreturns; x;
+
+naturalcures; x;
+naturalhealthsolutio; X; 887 - Natural Health Solutions
+
+openspan; x;
+
+pavg; x;
+pcharming; x;
+pcharming; X; Pueblo Charming Charlie Escalation
+pcladescalation; X; Pueblo Clad Escalation
+pcrescalation; x;
+pcrwebsiteissues; x;
+pdmcrcqa; X;
+pdmforms; X;
+pdotsescalation; X; Dots Escalation
+pedrshared; x;
+peekkids; X; added 05.12.2016 Jan
+peloquiiescalation; x;
+peproplus; x;
+perfectsaw; X;
+pgbb; x;
+pghbassesc; x;
+pmkjacobsesc; x;
+pragnboneesc; x;
+prainbowescalation; X; Rainbow Escalation
+ProsventcS; x;
+Profemin; x; 
+pshopkoescalation; X; Shopko Escalation
+ptest; x;
+Pueblo; L; anything that starts with Pueblo* we'll just filter out
+pueblodayoffrequest; X;
+puebloForms; x;
+pvivaescalation; x;
+pwilsonsesc; X;
+pwsus; x;
+Pwweescalation; x;
+PuebloReceiving; X; Pueblo Receiving Inbox
+
+qafeedback; x;
+
+RagandBone; X;
+rainbow; L; CRC email accounts for Rainbow
+rbowsmartpost; x; 
+Readpainrelief; X; 
+Returns-4; x;
+renohelpdesk; x;
+
+rsesabo; x;
+rsjgunze; x;
+rsdries; x;
+rmffpb6; x;
+rntest; x;
+
+sapolinar; x;
+sassyshaper; X;
+sassyshapers; X;
+seagate reports; x;
+Shopko; x;
+Smooth Skin Gold; x;
+stretchandfresh; x;
+summershaperjeggings; X; 
+support.ebay.wilsonsleather; x;
+support.ebay.wilsons; X;
+support.amazon.wilso; X;
+system4knees; x;
+
+Thane; X;
+ThaneTeamLeadsPueblo; x;
+thinkandlosespecial; x;
+tradeprofessionals; x;
+travelclean; X;
+TRRADMIN; x;
+
+vivachatbox; x;
+VivaTerraCS; x;
+vivaterracs; x;
+vivaterraunsubscribe; X; 
+vvillegas; x;
+
+WFM Reports; x;
+WFM01; x;
+wilsonscs; x;
+wilsonschatbox; x;
+wilsonbassopens; X;
+worldluminous; x;
+wwecs; x;
+wwesmartpost; x; WWE SmartPost CRC email account
+WWEOpenOrders; x; WWE Open Orders email account
+
+zumba; x;
+
+-- Hebron
+ebrown; X; Elbert Brown
+KYCNCT57; X;
+lsnedegar; X;
+mduncan; X;
+KentuckyHeldesk; X;
+tsutton; X; Trevor Sutton
+pyramid; X; Pyramid account for sorter
+-- alan.beck; X; 
+
+-- Bolingbrook
+bbhelpdesk; X;
+bbqa; X;
+bbrecv; L; bolingbrook receiving account(s) followed by 3-digit number
+bbw; x; service account for chicago servers
+ifsa; X; Bolingbrook Service Account
+iladmin; x; bolingbrook
+ilbb; l; bolingbrook
+--optum01; X;
+--optum02; X;
+--optum1; x; bolingbrook
+--optum2; x; bolingbrook
+pack; L; bolingbrook pack accounts followed by 3 digit number
+qa.bolingbrook; x; bolingbrook
+rhernandez; X;
+scandata; x; temp account for scandata
+sterling; x; bolingbrook
+vmodi; X;
+sramayya; X;
+
+-- Romeoville
+ilrv; L; generic packer accounts in the ROM warehouse
+
+-- Reno
+abdoer; L;
+alpha_calm; X;
+anexa; X;
+appetrol; X;
+azenda; X;
+
+bbamav; X;
+bbames; X;
+bbcchism; X;
+bbcpearon; X;
+bbdblanchard; X;
+bbdbradley; X;
+bbdcross; X;
+bbddudle; X;
+bbdexton; X;
+bbertl; X;
+bbfunfurn; X;
+bbhoohob; X;
+bbicemeist; X;
+bbisee; X;
+bbldubbert; X;
+bblhart; X;
+bbmedwards; X;
+bbmzeller; X;
+bbpony; X;
+bbshazle; X;
+bbtbaker; X;
+bbtfugat; X;
+bbtgibso; X;
+bbtjacks; X;
+bbtragsd; X;
+bbtsaunder; X;
+bbvgriffin; X;
+bbzack; X;
+bhjsmith; X;
+
+debtcures2priority; X;
+DebtCuresCC; X;
+debtcurespriority; X;
+debtrevpri; X;
+debtcures2; x;
+devwiki; X;
+DGASCHRI; X;
+DGCJONES; X;
+DGDCARDO; X;
+DGDELDER; X;
+dgdkeine; X;
+dggbower; X;
+DGGCHARL; X;
+dgjroger; X;
+DGTMARTI; X;
+DRG; X;
+dtm; X;
+
+egain; X;
+euroscg; X;
+
+fiberthin; X;
+flexrelief; X;
+
+helpstar; X;
+
+infomercial; X;
+inocmon; X; Reno inoc monitor
+
+jlpnnewm; X;
+
+lepresse; X;
+liveops; X; service FTP account for client LiveOps
+livermercial; X;
+lrjstm; X;
+
+msftorders; X;
+msg; X;
+msnmiller; X;
+Msshebert; X;
+
+nutrarenew; X;
+
+orbitrek; X;
+order_status_thane; X;
+
+pch; X;
+PerfectAir; X;
+PMInteractive; X;
+prod_info_thane; X;
+propolene; X;
+prosvent; X;
+pvcscalise; X;
+
+Quietfeet; X;
+
+renodataentry; X;
+returns_thane; X;
+RMCB; X;
+rnjbutler; X;
+rnjwatson; X;
+rnmisagre; X;
+rnmphillips; X;
+rnpfarrah; X;
+rnpjackson; X;
+rnrdrisd; X;
+rnschristian; X;
+rpftptest; X;
+rxftptest; X;
+
+SeagateInfo; X;
+seagateinfort; X;
+seatest; X;
+smpmcintos; X;
+steaminggrill; X;
+svcgentran; X; user for mailing from CRMS
+svcinnoterm; X;
+svcrnoback; x; Backup Reno Vertias
+svcrnoapps; X; used for mailing from CRMS
+svcsec; X;
+svcsql; X;
+svcudsapps; X; used for mailing from CRMS
+
+teleperf; X;
+Thane; X;
+thane_warranty; X;
+thaneinjury; X;
+thanestore; X;
+thanewarranty; X;
+thczanesco; X;
+thinkandlose790; X;
+thlmarroqu; X;
+trillium; X;
+
+viv; X;
+vtatuto; X;
+vtcopper; X;
+vtdovetail; X;
+vtdsacks; X;
+vtlillieb; X;
+vtpalecek; X;
+vtpalecek2; X;
+vtpottings; X;
+vtsdonald; X;
+vtstraydog; X;
+
+wikibak; X;
+wmethods; X;
+
+ybc; X;
+youthcocktail; X;
+
+zero_odor; X;
+zeroodor; X;
+zylotrim; X;
+
+-- Lawrenceville
+cedarshelpdesk; X;
+tigerdirect; x;
+
+-- Redlands aka Los Angles
+card; L; generic packer accounts in the LOS warehouse
+
+-- Tennesse, Memphis
+tnme; L; generic accounts for Memphis

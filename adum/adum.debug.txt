@@ -1,0 +1,1996 @@
+[12:26:51 PM] ADUM Debug Log File -- Generated: 05-Jun-17 12:26:51 PM
+[12:26:51 PM]  Application: C:\Program Files (x86)\Dovestones Software\True Last Logon\TrueLastLogonCLI.exe
+[12:26:51 PM]  Debug File: C:\Users\tfencl\prev_H\scripts\prod\adum\adum.debug.txt
+[12:26:51 PM]  Exception File: C:\Users\tfencl\prev_H\scripts\prod\adum\adum.exceptions.lst
+[12:26:51 PM]  Report Output File: C:\Users\tfencl\prev_H\scripts\prod\adum\adum.actions.5June2017.csv
+[12:26:51 PM]  TrueLastLogon Input File: C:\Users\tfencl\prev_H\scripts\prod\adum\adum.report.5June2017.csv
+[12:26:51 PM]  Execution Server: GAJCTODD
+[12:26:51 PM] ============================================================
+
+[12:26:56 PM] Arguements passed to C:\Users\tfencl\prev_H\scripts\prod\adum\TrueLastLogonCLI.exe: 
+	 /format:csv /file:"C:\Users\tfencl\prev_H\scripts\prod\adum\adum.report.5June2017.csv" /domain:innotrac.com /ou:dc=innotrac,dc=com /log /object:user /dc:GALVDC01,GALVDC02,GANCGCT01,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,GANCGCT02,KYCNDC02,NVREDC01,NVREDC02,NVREDC02,NVREDC02,TNMEDC01,TNMEDC01 /columns:sAMAccountName,lastLogonTimeStamp,Enabled,Lockout,PasswordNeverExpires,pwdLastSet,whenCreated,whenChanged,distinguishedName /quickfilterparams:60 /quickfilter:NotLoggedOnInXDays
+[12:26:56 PM] TrueLastLogonCLI.exe ProcessID is: 2516
+[12:39:55 PM] Execution time: 779 seconds
+[12:39:55 PM] Converted AD name DC=innotrac,DC=com to domain name innotrac.com
+[12:39:55 PM] Added acsadmin to the arrUserExcept array
+[12:39:55 PM] Added admintest to the arrUserExcept array
+[12:39:55 PM] Added admintest2 to the arrUserExcept array
+[12:39:55 PM] Added administrator to the arrUserExcept array
+[12:39:55 PM] Added adp-srv to the arrUserExcept array
+[12:39:55 PM] Added amcadmin to the arrUserExcept array
+[12:39:55 PM] Added apache to the arrUserExcept array
+[12:39:55 PM] Added atrsimmons to the arrUserExcept array
+[12:39:55 PM] Added autocopy to the arrUserExcept array
+[12:39:55 PM] Added avg to the arrUserExcept array
+[12:39:55 PM] Added itconferenceroom2 to the arrUserExcept array
+[12:39:55 PM] Added pci_service to the arrUserExcept array
+[12:39:55 PM] Added peak10support to the arrUserExcept array
+[12:39:55 PM] Added nvreoperations to the arrUserExcept array
+[12:39:55 PM] Added nvrewatchdog to the arrUserExcept array
+[12:39:55 PM] Added memphiscareers to the arrUserExcept array
+[12:39:55 PM] Added younameit to the arrUserExcept array
+[12:39:55 PM] Added wmtest to the arrUserExcept array
+[12:39:55 PM] Added bcrane to the arrUserExcept array
+[12:39:55 PM] Added besadmin to the arrUserExcept array
+[12:39:55 PM] Added bhart to the arrUserExcept array
+[12:39:55 PM] Added bkoechling to the arrUserExcept array
+[12:39:55 PM] Added brittany.hart to the arrUserExcept array
+[12:39:55 PM] Added bscrm1 to the arrUserExcept array
+[12:39:55 PM] Added charles.davis to the arrUserExcept array
+[12:39:55 PM] Added chrissy.herren to the arrUserExcept array
+[12:39:55 PM] Added cwremote1 to the arrUserExcept array
+[12:39:55 PM] Added daclients to the arrUserExcept array
+[12:39:55 PM] Added dave.klocek to the arrUserExcept array
+[12:39:55 PM] Added dcs_copu* to the arrUserExcept array
+[12:39:55 PM] Added disney to the arrUserExcept array
+[12:39:55 PM] Added disneyprinter to the arrUserExcept array
+[12:39:55 PM] Added ed.pilot to the arrUserExcept array
+[12:39:55 PM] Added euq* to the arrUserExcept array
+[12:39:55 PM] Added facebook to the arrUserExcept array
+[12:39:55 PM] Added frontdesk1 to the arrUserExcept array
+[12:39:55 PM] Added ghost* to the arrUserExcept array
+[12:39:55 PM] Added helpdeskform to the arrUserExcept array
+[12:39:55 PM] Added helpdesk to the arrUserExcept array
+[12:39:55 PM] Added hire.dynamics to the arrUserExcept array
+[12:39:55 PM] Added innotrac_jobs to the arrUserExcept array
+[12:39:55 PM] Added innotraccorp$ to the arrUserExcept array
+[12:39:55 PM] Added itconferenceroom to the arrUserExcept array
+[12:39:55 PM] Added it conference room to the arrUserExcept array
+[12:39:55 PM] Added iusr_* to the arrUserExcept array
+[12:39:55 PM] Added iwam_* to the arrUserExcept array
+[12:39:55 PM] Added java to the arrUserExcept array
+[12:39:55 PM] Added jobs-* to the arrUserExcept array
+[12:39:55 PM] Added kristi.doughty to the arrUserExcept array
+[12:39:55 PM] Added kristy.jackson to the arrUserExcept array
+[12:39:55 PM] Added kyle.magolan to the arrUserExcept array
+[12:39:55 PM] Added laurie.ryan to the arrUserExcept array
+[12:39:55 PM] Added lipozene to the arrUserExcept array
+[12:39:55 PM] Added lisa.bedinghaus to the arrUserExcept array
+[12:39:55 PM] Added liveid to the arrUserExcept array
+[12:39:55 PM] Added llambert to the arrUserExcept array
+[12:39:55 PM] Added lois.dumke to the arrUserExcept array
+[12:39:55 PM] Added lynn.shugrue to the arrUserExcept array
+[12:39:55 PM] Added ma to the arrUserExcept array
+[12:39:55 PM] Added mailquery to the arrUserExcept array
+[12:39:55 PM] Added mailroom to the arrUserExcept array
+[12:39:55 PM] Added mark.sanford to the arrUserExcept array
+[12:39:55 PM] Added marketing to the arrUserExcept array
+[12:39:55 PM] Added marty.lynch to the arrUserExcept array
+[12:39:55 PM] Added mas90service to the arrUserExcept array
+[12:39:55 PM] Added mgross to the arrUserExcept array
+[12:39:55 PM] Added michael.barela to the arrUserExcept array
+[12:39:55 PM] Added mindy.dorfman to the arrUserExcept array
+[12:39:55 PM] Added ms to the arrUserExcept array
+[12:39:55 PM] Added myork to the arrUserExcept array
+[12:39:55 PM] Added mercy.yorke to the arrUserExcept array
+[12:39:55 PM] Added nathan.krueger to the arrUserExcept array
+[12:39:55 PM] Added nvreoperations to the arrUserExcept array
+[12:39:55 PM] Added nvrewatchdog to the arrUserExcept array
+[12:39:55 PM] Added ow_working_mde to the arrUserExcept array
+[12:39:55 PM] Added paul.jenemann to the arrUserExcept array
+[12:39:55 PM] Added plotze to the arrUserExcept array
+[12:39:55 PM] Added porsche-close to the arrUserExcept array
+[12:39:55 PM] Added porscheselection to the arrUserExcept array
+[12:39:55 PM] Added qualtrax to the arrUserExcept array
+[12:39:55 PM] Added qwestreports to the arrUserExcept array
+[12:39:55 PM] Added renotestftp to the arrUserExcept array
+[12:39:55 PM] Added rnoinoc$ to the arrUserExcept array
+[12:39:55 PM] Added rnotest$ to the arrUserExcept array
+[12:39:55 PM] Added ron2 to the arrUserExcept array
+[12:39:55 PM] Added runas to the arrUserExcept array
+[12:39:55 PM] Added sales to the arrUserExcept array
+[12:39:55 PM] Added scott1 to the arrUserExcept array
+[12:39:55 PM] Added security to the arrUserExcept array
+[12:39:55 PM] Added serv-exch to the arrUserExcept array
+[12:39:55 PM] Added serv-sql to the arrUserExcept array
+[12:39:55 PM] Added serv-sql2 to the arrUserExcept array
+[12:39:55 PM] Added serv-wmethods to the arrUserExcept array
+[12:39:55 PM] Added serv-xchgadmin to the arrUserExcept array
+[12:39:55 PM] Added s-exchange to the arrUserExcept array
+[12:39:55 PM] Added silas.hamedi to the arrUserExcept array
+[12:39:55 PM] Added sitel to the arrUserExcept array
+[12:39:55 PM] Added smartlabel to the arrUserExcept array
+[12:39:55 PM] Added smsservice to the arrUserExcept array
+[12:39:55 PM] Added s-ntmon to the arrUserExcept array
+[12:39:55 PM] Added spam to the arrUserExcept array
+[12:39:55 PM] Added spanx to the arrUserExcept array
+[12:39:55 PM] Added spanx_files to the arrUserExcept array
+[12:39:55 PM] Added sqladmin to the arrUserExcept array
+[12:39:55 PM] Added sqladmin2 to the arrUserExcept array
+[12:39:55 PM] Added srv-pkweb to the arrUserExcept array
+[12:39:55 PM] Added srv-wmos to the arrUserExcept array
+[12:39:55 PM] Added s-sqlservice to the arrUserExcept array
+[12:39:55 PM] Added targetccsupport to the arrUserExcept array
+[12:39:55 PM] Added targetsav02 to the arrUserExcept array
+[12:39:55 PM] Added testservice to the arrUserExcept array
+[12:39:55 PM] Added thane_billing to the arrUserExcept array
+[12:39:55 PM] Added tm_osce_* to the arrUserExcept array
+[12:39:55 PM] Added tsinternetuser to the arrUserExcept array
+[12:39:55 PM] Added tssalerts* to the arrUserExcept array
+[12:39:55 PM] Added unix* to the arrUserExcept array
+[12:39:55 PM] Added uxpradhan to the arrUserExcept array
+[12:39:55 PM] Added uxm to the arrUserExcept array
+[12:39:55 PM] Added uxmtester to the arrUserExcept array
+[12:39:55 PM] Added veronica.merrick to the arrUserExcept array
+[12:39:55 PM] Added vickie.bennett to the arrUserExcept array
+[12:39:55 PM] Added vterra1 to the arrUserExcept array
+[12:39:55 PM] Added vterra2 to the arrUserExcept array
+[12:39:55 PM] Added vterra3 to the arrUserExcept array
+[12:39:55 PM] Added virus to the arrUserExcept array
+[12:39:55 PM] Added weblogic to the arrUserExcept array
+[12:39:55 PM] Added webmaster to the arrUserExcept array
+[12:39:55 PM] Added zumebar to the arrUserExcept array
+[12:39:55 PM] Added ohsvc to the arrUserExcept array
+[12:39:55 PM] Added runaspro to the arrUserExcept array
+[12:39:55 PM] Added chelpdesk to the arrUserExcept array
+[12:39:55 PM] Added mantissa to the arrUserExcept array
+[12:39:55 PM] Added c2asos* to the arrUserExcept array
+[12:39:55 PM] Added 100%male to the arrUserExcept array
+[12:39:55 PM] Added abdoersupport to the arrUserExcept array
+[12:39:55 PM] Added aqm to the arrUserExcept array
+[12:39:55 PM] Added aquatru to the arrUserExcept array
+[12:39:55 PM] Added arris to the arrUserExcept array
+[12:39:55 PM] Added arrisclient to the arrUserExcept array
+[12:39:55 PM] Added arristraining to the arrUserExcept array
+[12:39:55 PM] Added aspectadmin to the arrUserExcept array
+[12:39:55 PM] Added aspect01 to the arrUserExcept array
+[12:39:55 PM] Added aspect02 to the arrUserExcept array
+[12:39:55 PM] Added aspect03 to the arrUserExcept array
+[12:39:55 PM] Added aspect04 to the arrUserExcept array
+[12:39:55 PM] Added attcr to the arrUserExcept array
+[12:39:55 PM] Added atthle to the arrUserExcept array
+[12:39:55 PM] Added bizhub282 to the arrUserExcept array
+[12:39:55 PM] Added bizhub350 to the arrUserExcept array
+[12:39:55 PM] Added bizhub601 to the arrUserExcept array
+[12:39:55 PM] Added bs executive hotline to the arrUserExcept array
+[12:39:55 PM] Added cebria to the arrUserExcept array
+[12:39:55 PM] Added charmingcharlie to the arrUserExcept array
+[12:39:55 PM] Added charmingcharlieib to the arrUserExcept array
+[12:39:55 PM] Added charmingcharlieob to the arrUserExcept array
+[12:39:55 PM] Added charmingcharliervw to the arrUserExcept array
+[12:39:55 PM] Added cladmen to the arrUserExcept array
+[12:39:55 PM] Added cladchatbox to the arrUserExcept array
+[12:39:55 PM] Added clavehelp to the arrUserExcept array
+[12:39:55 PM] Added comfortissejeggings to the arrUserExcept array
+[12:39:55 PM] Added concierge to the arrUserExcept array
+[12:39:55 PM] Added copumcpc01 to the arrUserExcept array
+[12:39:55 PM] Added crcprint to the arrUserExcept array
+[12:39:55 PM] Added crcqa to the arrUserExcept array
+[12:39:55 PM] Added crcustserv to the arrUserExcept array
+[12:39:55 PM] Added crcthane to the arrUserExcept array
+[12:39:55 PM] Added crsmartpost to the arrUserExcept array
+[12:39:55 PM] Added crdelivery to the arrUserExcept array
+[12:39:55 PM] Added crossoverabs to the arrUserExcept array
+[12:39:55 PM] Added crinbound to the arrUserExcept array
+[12:39:55 PM] Added croutbound to the arrUserExcept array
+[12:39:55 PM] Added crreview to the arrUserExcept array
+[12:39:55 PM] Added customreplytest to the arrUserExcept array
+[12:39:55 PM] Added dankameters to the arrUserExcept array
+[12:39:55 PM] Added debtcure* to the arrUserExcept array
+[12:39:55 PM] Added dermawow to the arrUserExcept array
+[12:39:55 PM] Added dhaicrc to the arrUserExcept array
+[12:39:55 PM] Added dotscs to the arrUserExcept array
+[12:39:55 PM] Added dotssmartpost to the arrUserExcept array
+[12:39:55 PM] Added egaintest to the arrUserExcept array
+[12:39:55 PM] Added eloquii to the arrUserExcept array
+[12:39:55 PM] Added eolquiiib to the arrUserExcept array
+[12:39:55 PM] Added eloquiiob to the arrUserExcept array
+[12:39:55 PM] Added eloquiirvw to the arrUserExcept array
+[12:39:55 PM] Added ezclear to the arrUserExcept array
+[12:39:55 PM] Added ferrarics to the arrUserExcept array
+[12:39:55 PM] Added financialfreedom to the arrUserExcept array
+[12:39:55 PM] Added freemoney* to the arrUserExcept array
+[12:39:55 PM] Added ghbasschatbox to the arrUserExcept array
+[12:39:55 PM] Added ghbasshelps to the arrUserExcept array
+[12:39:55 PM] Added ghbasshelpib to the arrUserExcept array
+[12:39:55 PM] Added ghbasshelpob to the arrUserExcept array
+[12:39:55 PM] Added ghbasshelprvw to the arrUserExcept array
+[12:39:55 PM] Added ghbasshelp to the arrUserExcept array
+[12:39:55 PM] Added gsnaturalnews to the arrUserExcept array
+[12:39:55 PM] Added historic mint coint to the arrUserExcept array
+[12:39:55 PM] Added hrapp1 to the arrUserExcept array
+[12:39:55 PM] Added hrconf to the arrUserExcept array
+[12:39:55 PM] Added hrtemp to the arrUserExcept array
+[12:39:55 PM] Added hrtest* to the arrUserExcept array
+[12:39:55 PM] Added igsroot to the arrUserExcept array
+[12:39:55 PM] Added igwt to the arrUserExcept array
+[12:39:55 PM] Added pilmadverse to the arrUserExcept array
+[12:39:55 PM] Added inocshopkoissue to the arrUserExcept array
+[12:39:55 PM] Added inocelqissue to the arrUserExcept array
+[12:39:55 PM] Added jcore to the arrUserExcept array
+[12:39:55 PM] Added jfkcoin to the arrUserExcept array
+[12:39:55 PM] Added jlpcs to the arrUserExcept array
+[12:39:55 PM] Added jlpescalations to the arrUserExcept array
+[12:39:55 PM] Added justicecoin to the arrUserExcept array
+[12:39:55 PM] Added justrepelit to the arrUserExcept array
+[12:39:55 PM] Added karllagerfeldparishelp to the arrUserExcept array
+[12:39:55 PM] Added kowa to the arrUserExcept array
+[12:39:55 PM] Added lemonpop to the arrUserExcept array
+[12:39:55 PM] Added lrjs to the arrUserExcept array
+[12:39:55 PM] Added ltduser to the arrUserExcept array
+[12:39:55 PM] Added mintingmillions to the arrUserExcept array
+[12:39:55 PM] Added mo'doherty to the arrUserExcept array
+[12:39:55 PM] Added motobbadherence to the arrUserExcept array
+[12:39:55 PM] Added motoclient to the arrUserExcept array
+[12:39:55 PM] Added motoea to the arrUserExcept array
+[12:39:55 PM] Added motorola to the arrUserExcept array
+[12:39:55 PM] Added mototraining to the arrUserExcept array
+[12:39:55 PM] Added motoreturns to the arrUserExcept array
+[12:39:55 PM] Added naturalcures to the arrUserExcept array
+[12:39:55 PM] Added naturalhealthsolutio to the arrUserExcept array
+[12:39:55 PM] Added openspan to the arrUserExcept array
+[12:39:55 PM] Added pavg to the arrUserExcept array
+[12:39:55 PM] Added pcharming to the arrUserExcept array
+[12:39:55 PM] Added pcharming to the arrUserExcept array
+[12:39:55 PM] Added pcladescalation to the arrUserExcept array
+[12:39:55 PM] Added pcrescalation to the arrUserExcept array
+[12:39:55 PM] Added pcrwebsiteissues to the arrUserExcept array
+[12:39:55 PM] Added pdmcrcqa to the arrUserExcept array
+[12:39:55 PM] Added pdmforms to the arrUserExcept array
+[12:39:55 PM] Added pdotsescalation to the arrUserExcept array
+[12:39:55 PM] Added pedrshared to the arrUserExcept array
+[12:39:55 PM] Added peekkids to the arrUserExcept array
+[12:39:55 PM] Added peloquiiescalation to the arrUserExcept array
+[12:39:55 PM] Added peproplus to the arrUserExcept array
+[12:39:55 PM] Added perfectsaw to the arrUserExcept array
+[12:39:55 PM] Added pgbb to the arrUserExcept array
+[12:39:55 PM] Added pghbassesc to the arrUserExcept array
+[12:39:55 PM] Added pmkjacobsesc to the arrUserExcept array
+[12:39:55 PM] Added pragnboneesc to the arrUserExcept array
+[12:39:55 PM] Added prainbowescalation to the arrUserExcept array
+[12:39:55 PM] Added prosventcs to the arrUserExcept array
+[12:39:55 PM] Added profemin to the arrUserExcept array
+[12:39:55 PM] Added pshopkoescalation to the arrUserExcept array
+[12:39:55 PM] Added ptest to the arrUserExcept array
+[12:39:55 PM] Added pueblo* to the arrUserExcept array
+[12:39:55 PM] Added pueblodayoffrequest to the arrUserExcept array
+[12:39:55 PM] Added puebloforms to the arrUserExcept array
+[12:39:55 PM] Added pvivaescalation to the arrUserExcept array
+[12:39:55 PM] Added pwilsonsesc to the arrUserExcept array
+[12:39:55 PM] Added pwsus to the arrUserExcept array
+[12:39:55 PM] Added pwweescalation to the arrUserExcept array
+[12:39:55 PM] Added puebloreceiving to the arrUserExcept array
+[12:39:55 PM] Added qafeedback to the arrUserExcept array
+[12:39:55 PM] Added ragandbone to the arrUserExcept array
+[12:39:55 PM] Added rainbow* to the arrUserExcept array
+[12:39:55 PM] Added rbowsmartpost to the arrUserExcept array
+[12:39:55 PM] Added readpainrelief to the arrUserExcept array
+[12:39:55 PM] Added returns-4 to the arrUserExcept array
+[12:39:55 PM] Added renohelpdesk to the arrUserExcept array
+[12:39:55 PM] Added rsesabo to the arrUserExcept array
+[12:39:55 PM] Added rsjgunze to the arrUserExcept array
+[12:39:55 PM] Added rsdries to the arrUserExcept array
+[12:39:55 PM] Added rmffpb6 to the arrUserExcept array
+[12:39:55 PM] Added rntest to the arrUserExcept array
+[12:39:55 PM] Added sapolinar to the arrUserExcept array
+[12:39:55 PM] Added sassyshaper to the arrUserExcept array
+[12:39:55 PM] Added sassyshapers to the arrUserExcept array
+[12:39:55 PM] Added seagate reports to the arrUserExcept array
+[12:39:55 PM] Added shopko to the arrUserExcept array
+[12:39:55 PM] Added smooth skin gold to the arrUserExcept array
+[12:39:55 PM] Added stretchandfresh to the arrUserExcept array
+[12:39:55 PM] Added summershaperjeggings to the arrUserExcept array
+[12:39:55 PM] Added support.ebay.wilsonsleather to the arrUserExcept array
+[12:39:55 PM] Added support.ebay.wilsons to the arrUserExcept array
+[12:39:55 PM] Added support.amazon.wilso to the arrUserExcept array
+[12:39:55 PM] Added system4knees to the arrUserExcept array
+[12:39:55 PM] Added thane to the arrUserExcept array
+[12:39:55 PM] Added thaneteamleadspueblo to the arrUserExcept array
+[12:39:55 PM] Added thinkandlosespecial to the arrUserExcept array
+[12:39:55 PM] Added tradeprofessionals to the arrUserExcept array
+[12:39:55 PM] Added travelclean to the arrUserExcept array
+[12:39:55 PM] Added trradmin to the arrUserExcept array
+[12:39:55 PM] Added vivachatbox to the arrUserExcept array
+[12:39:55 PM] Added vivaterracs to the arrUserExcept array
+[12:39:55 PM] Added vivaterracs to the arrUserExcept array
+[12:39:55 PM] Added vivaterraunsubscribe to the arrUserExcept array
+[12:39:55 PM] Added vvillegas to the arrUserExcept array
+[12:39:55 PM] Added wfm reports to the arrUserExcept array
+[12:39:55 PM] Added wfm01 to the arrUserExcept array
+[12:39:55 PM] Added wilsonscs to the arrUserExcept array
+[12:39:55 PM] Added wilsonschatbox to the arrUserExcept array
+[12:39:55 PM] Added wilsonbassopens to the arrUserExcept array
+[12:39:55 PM] Added worldluminous to the arrUserExcept array
+[12:39:55 PM] Added wwecs to the arrUserExcept array
+[12:39:55 PM] Added wwesmartpost to the arrUserExcept array
+[12:39:55 PM] Added wweopenorders to the arrUserExcept array
+[12:39:55 PM] Added zumba to the arrUserExcept array
+[12:39:55 PM] Added ebrown to the arrUserExcept array
+[12:39:55 PM] Added kycnct57 to the arrUserExcept array
+[12:39:55 PM] Added lsnedegar to the arrUserExcept array
+[12:39:55 PM] Added mduncan to the arrUserExcept array
+[12:39:55 PM] Added kentuckyheldesk to the arrUserExcept array
+[12:39:55 PM] Added tsutton to the arrUserExcept array
+[12:39:55 PM] Added pyramid to the arrUserExcept array
+[12:39:55 PM] Added bbhelpdesk to the arrUserExcept array
+[12:39:55 PM] Added bbqa to the arrUserExcept array
+[12:39:55 PM] Added bbrecv* to the arrUserExcept array
+[12:39:55 PM] Added bbw to the arrUserExcept array
+[12:39:55 PM] Added ifsa to the arrUserExcept array
+[12:39:55 PM] Added iladmin to the arrUserExcept array
+[12:39:55 PM] Added ilbb* to the arrUserExcept array
+[12:39:55 PM] Added pack* to the arrUserExcept array
+[12:39:55 PM] Added qa.bolingbrook to the arrUserExcept array
+[12:39:55 PM] Added rhernandez to the arrUserExcept array
+[12:39:55 PM] Added scandata to the arrUserExcept array
+[12:39:55 PM] Added sterling to the arrUserExcept array
+[12:39:55 PM] Added vmodi to the arrUserExcept array
+[12:39:55 PM] Added sramayya to the arrUserExcept array
+[12:39:55 PM] Added ilrv* to the arrUserExcept array
+[12:39:55 PM] Added abdoer* to the arrUserExcept array
+[12:39:55 PM] Added alpha_calm to the arrUserExcept array
+[12:39:55 PM] Added anexa to the arrUserExcept array
+[12:39:55 PM] Added appetrol to the arrUserExcept array
+[12:39:55 PM] Added azenda to the arrUserExcept array
+[12:39:55 PM] Added bbamav to the arrUserExcept array
+[12:39:55 PM] Added bbames to the arrUserExcept array
+[12:39:55 PM] Added bbcchism to the arrUserExcept array
+[12:39:55 PM] Added bbcpearon to the arrUserExcept array
+[12:39:55 PM] Added bbdblanchard to the arrUserExcept array
+[12:39:55 PM] Added bbdbradley to the arrUserExcept array
+[12:39:55 PM] Added bbdcross to the arrUserExcept array
+[12:39:55 PM] Added bbddudle to the arrUserExcept array
+[12:39:55 PM] Added bbdexton to the arrUserExcept array
+[12:39:55 PM] Added bbertl to the arrUserExcept array
+[12:39:55 PM] Added bbfunfurn to the arrUserExcept array
+[12:39:55 PM] Added bbhoohob to the arrUserExcept array
+[12:39:55 PM] Added bbicemeist to the arrUserExcept array
+[12:39:55 PM] Added bbisee to the arrUserExcept array
+[12:39:55 PM] Added bbldubbert to the arrUserExcept array
+[12:39:55 PM] Added bblhart to the arrUserExcept array
+[12:39:55 PM] Added bbmedwards to the arrUserExcept array
+[12:39:55 PM] Added bbmzeller to the arrUserExcept array
+[12:39:55 PM] Added bbpony to the arrUserExcept array
+[12:39:55 PM] Added bbshazle to the arrUserExcept array
+[12:39:55 PM] Added bbtbaker to the arrUserExcept array
+[12:39:55 PM] Added bbtfugat to the arrUserExcept array
+[12:39:55 PM] Added bbtgibso to the arrUserExcept array
+[12:39:55 PM] Added bbtjacks to the arrUserExcept array
+[12:39:55 PM] Added bbtragsd to the arrUserExcept array
+[12:39:55 PM] Added bbtsaunder to the arrUserExcept array
+[12:39:55 PM] Added bbvgriffin to the arrUserExcept array
+[12:39:55 PM] Added bbzack to the arrUserExcept array
+[12:39:55 PM] Added bhjsmith to the arrUserExcept array
+[12:39:55 PM] Added debtcures2priority to the arrUserExcept array
+[12:39:55 PM] Added debtcurescc to the arrUserExcept array
+[12:39:55 PM] Added debtcurespriority to the arrUserExcept array
+[12:39:55 PM] Added debtrevpri to the arrUserExcept array
+[12:39:55 PM] Added debtcures2 to the arrUserExcept array
+[12:39:55 PM] Added devwiki to the arrUserExcept array
+[12:39:55 PM] Added dgaschri to the arrUserExcept array
+[12:39:55 PM] Added dgcjones to the arrUserExcept array
+[12:39:55 PM] Added dgdcardo to the arrUserExcept array
+[12:39:55 PM] Added dgdelder to the arrUserExcept array
+[12:39:55 PM] Added dgdkeine to the arrUserExcept array
+[12:39:55 PM] Added dggbower to the arrUserExcept array
+[12:39:55 PM] Added dggcharl to the arrUserExcept array
+[12:39:55 PM] Added dgjroger to the arrUserExcept array
+[12:39:55 PM] Added dgtmarti to the arrUserExcept array
+[12:39:55 PM] Added drg to the arrUserExcept array
+[12:39:55 PM] Added dtm to the arrUserExcept array
+[12:39:55 PM] Added egain to the arrUserExcept array
+[12:39:55 PM] Added euroscg to the arrUserExcept array
+[12:39:55 PM] Added fiberthin to the arrUserExcept array
+[12:39:55 PM] Added flexrelief to the arrUserExcept array
+[12:39:55 PM] Added helpstar to the arrUserExcept array
+[12:39:55 PM] Added infomercial to the arrUserExcept array
+[12:39:55 PM] Added inocmon to the arrUserExcept array
+[12:39:55 PM] Added jlpnnewm to the arrUserExcept array
+[12:39:55 PM] Added lepresse to the arrUserExcept array
+[12:39:55 PM] Added liveops to the arrUserExcept array
+[12:39:55 PM] Added livermercial to the arrUserExcept array
+[12:39:55 PM] Added lrjstm to the arrUserExcept array
+[12:39:55 PM] Added msftorders to the arrUserExcept array
+[12:39:55 PM] Added msg to the arrUserExcept array
+[12:39:55 PM] Added msnmiller to the arrUserExcept array
+[12:39:55 PM] Added msshebert to the arrUserExcept array
+[12:39:55 PM] Added nutrarenew to the arrUserExcept array
+[12:39:55 PM] Added orbitrek to the arrUserExcept array
+[12:39:55 PM] Added order_status_thane to the arrUserExcept array
+[12:39:55 PM] Added pch to the arrUserExcept array
+[12:39:55 PM] Added perfectair to the arrUserExcept array
+[12:39:55 PM] Added pminteractive to the arrUserExcept array
+[12:39:55 PM] Added prod_info_thane to the arrUserExcept array
+[12:39:55 PM] Added propolene to the arrUserExcept array
+[12:39:55 PM] Added prosvent to the arrUserExcept array
+[12:39:55 PM] Added pvcscalise to the arrUserExcept array
+[12:39:55 PM] Added quietfeet to the arrUserExcept array
+[12:39:55 PM] Added renodataentry to the arrUserExcept array
+[12:39:55 PM] Added returns_thane to the arrUserExcept array
+[12:39:55 PM] Added rmcb to the arrUserExcept array
+[12:39:55 PM] Added rnjbutler to the arrUserExcept array
+[12:39:55 PM] Added rnjwatson to the arrUserExcept array
+[12:39:55 PM] Added rnmisagre to the arrUserExcept array
+[12:39:55 PM] Added rnmphillips to the arrUserExcept array
+[12:39:55 PM] Added rnpfarrah to the arrUserExcept array
+[12:39:55 PM] Added rnpjackson to the arrUserExcept array
+[12:39:55 PM] Added rnrdrisd to the arrUserExcept array
+[12:39:55 PM] Added rnschristian to the arrUserExcept array
+[12:39:55 PM] Added rpftptest to the arrUserExcept array
+[12:39:55 PM] Added rxftptest to the arrUserExcept array
+[12:39:55 PM] Added seagateinfo to the arrUserExcept array
+[12:39:55 PM] Added seagateinfort to the arrUserExcept array
+[12:39:55 PM] Added seatest to the arrUserExcept array
+[12:39:55 PM] Added smpmcintos to the arrUserExcept array
+[12:39:55 PM] Added steaminggrill to the arrUserExcept array
+[12:39:55 PM] Added svcgentran to the arrUserExcept array
+[12:39:55 PM] Added svcinnoterm to the arrUserExcept array
+[12:39:55 PM] Added svcrnoback to the arrUserExcept array
+[12:39:55 PM] Added svcrnoapps to the arrUserExcept array
+[12:39:55 PM] Added svcsec to the arrUserExcept array
+[12:39:55 PM] Added svcsql to the arrUserExcept array
+[12:39:55 PM] Added svcudsapps to the arrUserExcept array
+[12:39:55 PM] Added teleperf to the arrUserExcept array
+[12:39:55 PM] Added thane to the arrUserExcept array
+[12:39:55 PM] Added thane_warranty to the arrUserExcept array
+[12:39:55 PM] Added thaneinjury to the arrUserExcept array
+[12:39:55 PM] Added thanestore to the arrUserExcept array
+[12:39:55 PM] Added thanewarranty to the arrUserExcept array
+[12:39:55 PM] Added thczanesco to the arrUserExcept array
+[12:39:55 PM] Added thinkandlose790 to the arrUserExcept array
+[12:39:55 PM] Added thlmarroqu to the arrUserExcept array
+[12:39:55 PM] Added trillium to the arrUserExcept array
+[12:39:55 PM] Added viv to the arrUserExcept array
+[12:39:55 PM] Added vtatuto to the arrUserExcept array
+[12:39:55 PM] Added vtcopper to the arrUserExcept array
+[12:39:55 PM] Added vtdovetail to the arrUserExcept array
+[12:39:55 PM] Added vtdsacks to the arrUserExcept array
+[12:39:55 PM] Added vtlillieb to the arrUserExcept array
+[12:39:55 PM] Added vtpalecek to the arrUserExcept array
+[12:39:55 PM] Added vtpalecek2 to the arrUserExcept array
+[12:39:55 PM] Added vtpottings to the arrUserExcept array
+[12:39:55 PM] Added vtsdonald to the arrUserExcept array
+[12:39:55 PM] Added vtstraydog to the arrUserExcept array
+[12:39:55 PM] Added wikibak to the arrUserExcept array
+[12:39:55 PM] Added wmethods to the arrUserExcept array
+[12:39:55 PM] Added ybc to the arrUserExcept array
+[12:39:55 PM] Added youthcocktail to the arrUserExcept array
+[12:39:55 PM] Added zero_odor to the arrUserExcept array
+[12:39:55 PM] Added zeroodor to the arrUserExcept array
+[12:39:55 PM] Added zylotrim to the arrUserExcept array
+[12:39:55 PM] Added cedarshelpdesk to the arrUserExcept array
+[12:39:55 PM] Added tigerdirect to the arrUserExcept array
+[12:39:55 PM] Added card* to the arrUserExcept array
+[12:39:55 PM] Added tnme* to the arrUserExcept array
+
+[12:39:55 PM] ============================================================
+[12:39:55 PM] ** Exceptions Added: 459 **
+[12:39:55 PM] ============================================================
+
+[12:39:55 PM] User bbhelpdesk matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User serv-exch matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User s-exchange matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User smsservice matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User amcadmin matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User ifsa matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User TsInternetUser matched an entry in the exception file of `EXACT` pattern
+[12:39:55 PM] User IWAM_ILRVDC01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_ILRVDC01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IWAM_COPUFNP01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_COPUFNP01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IWAM_GASLFNP10 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_GASLFNP10 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IWAM_KYCNFNP01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_KYCNFNP01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_KYCNDC01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_KYHBDC01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_LSLMAIL matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_NVREDC02 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_GASLGCT02A matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_GASLGCT20 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_NVREDCXX matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_RNOTERM00 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_COPUDC03 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_OHCODC02 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_OHCODC10 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_OHGPDC01 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_KYCNFNP10 matched an entry in the exception file of `LIKE` pattern
+[12:39:55 PM] User IUSR_GANCGCT02 matched an entry in the exception file of `LIKE` pattern
+[12:39:58 PM]  User sweathersby disabled. Path: CN=Weathersby\, Steve,OU=Operations,OU=Office,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (23-Feb-17 10:41:40 AM)
+[12:40:03 PM] User apache matched an entry in the exception file of `EXACT` pattern
+[12:40:03 PM] User ILBBJLPTH01 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBJLPTH02 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBRTNTH01 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH34 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH35 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH36 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH37 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH38 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH39 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH40 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH41 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH42 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH43 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH44 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH45 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH46 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH47 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH48 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBATPACKTH49 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBJLPTH03 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User ILBBPACKAGE01 matched an entry in the exception file of `LIKE` pattern
+[12:40:03 PM] User RNOINOC$ matched an entry in the exception file of `EXACT` pattern
+[12:40:04 PM]  User trradmin2 disabled. Path: CN=trradmin2,CN=Users,DC=innotrac,DC=com Last Logon:  (31-Mar-17 3:02:19 AM)
+[12:40:09 PM] User TRRADMIN matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User serv-xchgadmin matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User svcrnoback matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User RunAs matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User adp-srv matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User igsroot matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User testservice matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User unixsys.rno.zeus.lda matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User unixsys.rno.pxpftp.l matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User unixsys.web matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User unixsys.webproxy matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User puebloitserv matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User ilbbvoicemail matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User AVG matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User unixsys.atl.netapp.l matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User PCI_service matched an entry in the exception file of `EXACT` pattern
+[12:40:09 PM] User unixsys.atl.dfm.ldap matched an entry in the exception file of `LIKE` pattern
+[12:40:09 PM] User INNOTRACCORP$ matched an entry in the exception file of `EXACT` pattern
+[12:40:11 PM]  User ASadler disabled. Path: CN=Sadler\, Arlene,OU=Human Resources,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (30-Mar-17 9:31:22 AM)
+[12:40:20 PM]  User mpierce disabled. Path: CN=Pierce\, Mark,OU=Directors,OU=Office,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (21-Feb-17 5:31:13 PM)
+[12:40:27 PM] User bbqa matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User IWAM_DENCDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_GASLGCT01 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_KYCNDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_LSLMAIL matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_OHCODC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User mailquery matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User QualTrax matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User Qwestreports matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User serv-sql matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User serv-sql2 matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User sqladmin matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User IWAM_GASLGCT02A matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User InocMon matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User ltduser matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User lepresse matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User IWAM_GASLGCT20 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User targetsav02 matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User serv-wmethods matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User pack010 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack097 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User wmethods matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User IWAM_ILRVDC02 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_COPUDC02 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_NVREDCXX matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack084 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User IWAM_RNOTERM00 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack092 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack096 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User rnpfarrah matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User rnmphillips matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User pack081 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack082 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack052 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User srv-pkweb matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User pack005 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User pack094 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User smartlabel matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User pack007 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User fiberthin matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User nutrarenew matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User propolene matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User thanewarranty matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User pack090 matched an entry in the exception file of `LIKE` pattern
+[12:40:27 PM] User bbdbradley matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User bbdblanchard matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User bbcchism matched an entry in the exception file of `EXACT` pattern
+[12:40:27 PM] User bbmzeller matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User qafeedback matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Frontdesk1 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbtsaunder matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbmedwards matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack089 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User rnmisagre matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbldubbert matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rnpjackson matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User wikibak matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vterra1 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User hrconf matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DCS_COPUDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User DCS_COPUDC01A matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User IWAM_COPUDC04 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User vtpalecek matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vterra3 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vtdsacks matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rnjwatson matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbdexton matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbertl matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbicemeist matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbfunfurn matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User ThaneTeamLeadsPueblo matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User renotestftp matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rpftptest matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User TM_OSCE_COPUDC02 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User java matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User sitel matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pch matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rxftptest matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User liveops matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User PMInteractive matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User RMCB matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User lrjstm matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User prosvent matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User alpha_calm matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User zero_odor matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User zylotrim matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User teleperf matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User flexrelief matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User viv matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User dtm matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User euroscg matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User anexa matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User livermercial matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User infomercial matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User msg matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack074 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User vterra2 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User unixsys.rno.wmprd.ft matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack021 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User weblogic matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pvcscalise matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User disneyprinter matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User IWAM_OHCODC02 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User PuebloReceiving matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User nvreoperations matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User MYork matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User crcthane matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User devwiki matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Disney matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DRG matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User egain matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User EUQ_GASLEXC14 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Innotrac_jobs matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Jobs-Atlanta matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-Bolingbrook matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User jobs-columbus matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-Hebron matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-NewCastle matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-Pueblo matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User PuebloJobs matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-Reno matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Jobs-Romeoville matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Mailroom matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Marketing matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User msftorders matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Helpdesk matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User order_status_thane matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User ow_working_mde matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Porsche-Close matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User prod_info_thane matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User PuebloDowntimeForm matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User returns_thane matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User seatest matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Spanx_files matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User steaminggrill matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User targetccsupport matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User thane_billing matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User thane_warranty matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User thinkandlose790 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User WFM01 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack075 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User vtatuto matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vtstraydog matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbpony matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User Msshebert matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User unixsys.atl.xmpp.lda matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbisee matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bblhart matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack095 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack098 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack070 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack069 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbtbaker matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbddudle matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack088 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbhoohob matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack034 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack013 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack015 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack127 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User dggbower matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User dgjroger matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbames matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack073 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack016 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack085 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbtgibso matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User PuebloCommunication matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbshazle matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbamav matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbtragsd matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bbtjacks matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack134 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack011 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbtfugat matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack014 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack086 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack043 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack136 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbvgriffin matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack006 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack009 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack035 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User facebook matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rnjbutler matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rnschristian matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User rnrdrisd matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack072 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User dgdkeine matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vtcopper matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User IWAM_OHCODC10 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User DGGCHARL matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DGCJONES matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DGASCHRI matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DGTMARTI matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DGDCARDO matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DGDELDER matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bhart matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack062 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User arrisclient matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User llambert matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bkoechling matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack020 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User Pueblo Helpdesk matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pavg matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack018 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack008 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack045 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack012 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User dankameters matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User copumcpc01 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bizhub601 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bizhub282 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User bizhub350 matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User IWAM_COPUDC01A matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack064 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User unix.domainadmin matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack091 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack044 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User seagate reports matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User vmodi matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User wmtest matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack077 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User lipozene matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User scandata matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User DCS_COPUDC03 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User TM_OSCE_OHCODC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User thlmarroqu matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack032 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User LiveID matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack037 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack038 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbzack matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User TM_OSCE_COPUDC04 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User MAS90service matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack042 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack040 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User ILBBJCPTH19 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack067 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack047 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User TM_OSCE_KYHBDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack080 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack071 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack048 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack061 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User bbw matched an entry in the exception file of `EXACT` pattern
+[12:40:28 PM] User pack036 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack059 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User ILBBJCPTH18 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User GhostGAJCGHOST01 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack024 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack139 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack068 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack065 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack137 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack093 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User ILBBJCPTH17 matched an entry in the exception file of `LIKE` pattern
+[12:40:28 PM] User pack041 matched an entry in the exception file of `LIKE` pattern
+[12:40:30 PM]  User NWilliams disabled. Path: CN=Williams\, Nyra,OU=Client Services,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (09-Feb-17 2:19:46 PM)
+[12:40:37 PM] User sramayya matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User pack076 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User unixsys.xmpp.ldap matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User nvrewatchdog matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User unix.ldap.auth matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User unixsys.atl.web.ldap matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User uxm matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User ILBBJCPTH16 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User pack050 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User ILBBATPACKTH27 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User plotze matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User vtpottings matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User pack039 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User TM_OSCE_KYCNDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User vtlillieb matched an entry in the exception file of `EXACT` pattern
+[12:40:37 PM] User ILBBRTNTH02 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User pack138 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User pack049 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User pack060 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User ILBBJCPTH11 matched an entry in the exception file of `LIKE` pattern
+[12:40:37 PM] User unixsys.atl.mail.lda matched an entry in the exception file of `LIKE` pattern
+[12:40:39 PM]  User CHerren disabled. Path: CN=Herren\, Chrissy,OU=Accounting,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (27-Mar-17 8:33:33 AM)
+[12:40:46 PM] User ILBBJCPTH13 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH08 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH15 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH12 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH20 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH14 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack078 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH06 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH04 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH02 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack051 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH07 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH01 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH05 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack023 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack017 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBARRAYTH04 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack019 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack087 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack119 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack120 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack121 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack123 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack124 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack125 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack126 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH09 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH10 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User ILBBJCPTH03 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User IUSR_COPUDC04 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User IWAM_OHGPDC01 matched an entry in the exception file of `LIKE` pattern
+[12:40:46 PM] User pack110 matched an entry in the exception file of `LIKE` pattern
+[12:40:48 PM]  User wboyd disabled. Path: CN=Boyd\, Wayne,OU=Leads,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (01-Mar-17 1:28:28 PM)
+[12:40:57 PM] User pack046 matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User BS Executive Hotline matched an entry in the exception file of `EXACT` pattern
+[12:40:57 PM] User pack117 matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User pueblodayoffrequest matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User pedrshared matched an entry in the exception file of `EXACT` pattern
+[12:40:57 PM] User pgbb matched an entry in the exception file of `EXACT` pattern
+[12:40:57 PM] User autocopy matched an entry in the exception file of `EXACT` pattern
+[12:40:57 PM] User peproplus matched an entry in the exception file of `EXACT` pattern
+[12:40:57 PM] User tssalerts-Reno matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User tssalerts-Hebron1 matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User tssalerts-atlanta matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User tssalerts-hebron2 matched an entry in the exception file of `LIKE` pattern
+[12:40:57 PM] User tssalerts-Chicago matched an entry in the exception file of `LIKE` pattern
+[12:40:59 PM]  User mansagay disabled. Path: CN=Ansagay\, Melanie,OU=Warehouse Staff,OU=Warehouse Super,OU=Reno,DC=innotrac,DC=com Last Logon:  (19-Feb-17 2:20:50 PM)
+[12:41:09 PM] User pwsus matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User hrapp1 matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User pueblohba matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User IWAM_KYCNFNP10 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack058 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pcharming matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User cedarshelpdesk matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User pack053 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack033 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User renohelpdesk matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User bbrecv017 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User tssalerts-Pueblo matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User IWAM_GANCGCT02 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User ILBBSHIPPING04 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User mantissa matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User pack079 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack002 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack004 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack003 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack131 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack066 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack135 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack129 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv010 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack128 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv019 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv018 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack130 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack057 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv013 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack118 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack025 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack27 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack031 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack054 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack055 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack056 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack063 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack083 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack100 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv001 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv002 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv003 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv004 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv005 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv006 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv007 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv008 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv009 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv011 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv012 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack101 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack102 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack103 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack104 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack105 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack106 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack107 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack108 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack109 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack111 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack112 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack113 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack114 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack115 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User pack116 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User sterling matched an entry in the exception file of `EXACT` pattern
+[12:41:09 PM] User bbrecv014 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv015 matched an entry in the exception file of `LIKE` pattern
+[12:41:09 PM] User bbrecv016 matched an entry in the exception file of `LIKE` pattern
+[12:41:11 PM]  User cedarslab disabled. Path: CN=Cedars\, Lab,OU=Managers,OU=Office,OU=GALV,OU=Georgia,DC=innotrac,DC=com Last Logon:  (17-Feb-17 8:49:46 AM)
+[12:41:20 PM] User ILBBSHIPPING05 matched an entry in the exception file of `LIKE` pattern
+[12:41:20 PM] User HRTest1 matched an entry in the exception file of `LIKE` pattern
+[12:41:20 PM] User tigerdirect matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User pwweescalation matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User jlpescalations matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User pvivaescalation matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User pcrescalation matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User pdmforms matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User attcr matched an entry in the exception file of `EXACT` pattern
+[12:41:20 PM] User atthle matched an entry in the exception file of `EXACT` pattern
+[12:41:22 PM]  User echavez disabled. Path: CN=Chavez\, Elias,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (24-Mar-17 11:33:08 PM)
+[12:41:34 PM]  User lharrington disabled. Path: CN=Harrington\, Liz,OU=Sales,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (13-Feb-17 9:22:31 AM)
+[12:41:42 PM] User PuebloTraining matched an entry in the exception file of `LIKE` pattern
+[12:41:42 PM] User prainbowescalation matched an entry in the exception file of `EXACT` pattern
+[12:41:42 PM] User pdotsescalation matched an entry in the exception file of `EXACT` pattern
+[12:41:42 PM] User hrtest3 matched an entry in the exception file of `LIKE` pattern
+[12:41:44 PM]  User shans disabled. Path: CN=Hans\, Steve,OU=Inventory Control,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (05-Apr-17 1:00:32 AM)
+[12:41:53 PM] User debtcures2 matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User svcsec matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User seagateinfort matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User SeagateInfo matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User tssalerts-Ohio matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User abdoersupport matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User debtcures2priority matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User DebtCuresCC matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User debtcurespriority matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User debtcures matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User dhaicrc matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User freemoney2012 matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User justicecoin matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User freemoneypri matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User freemoney matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User porscheselection matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User customreplytest matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User Thane matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User thanestore matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User crsmartpost matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User jlpnnewm matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User AspectAdmin matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User wwecs matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User HRTest2 matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User crcprint matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User hrtest4 matched an entry in the exception file of `LIKE` pattern
+[12:41:53 PM] User crcqa matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User pyramid matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User CharmingCharlie matched an entry in the exception file of `EXACT` pattern
+[12:41:53 PM] User crcustserv matched an entry in the exception file of `EXACT` pattern
+[12:41:57 PM]  User dgrholde disabled. Path: CN=Holder\, Ruth,OU=DEMG,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (01-Mar-17 8:54:02 AM)
+[12:42:09 PM]  User kyhb1dsec01 disabled. Path: CN=KYHB1\, DSEC01,OU=Associates,OU=Warehouse,OU=KYCN,OU=Kentucky,DC=innotrac,DC=com Last Logon:  (29-Jan-17 11:04:15 AM)
+[12:42:18 PM] User svcsql matched an entry in the exception file of `EXACT` pattern
+[12:42:22 PM]  User cjohnston disabled. Path: CN=Johnston\, Charlene,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (14-Mar-17 6:25:41 AM)
+[12:42:30 PM] User crdelivery matched an entry in the exception file of `EXACT` pattern
+[12:42:32 PM]  User jburton disabled. Path: CN=Burton\, John,OU=Associates,OU=Warehouse,OU=KYCN,OU=Kentucky,DC=innotrac,DC=com Last Logon:  (01-Feb-17 7:59:44 AM)
+[12:42:39 PM] User ILBBJLPTH04 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH05 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH06 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH07 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH08 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH09 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH10 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH12 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH13 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH11 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBJLPTH14 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBDOTSTH01 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBDOTSTH02 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBDOTSTH03 matched an entry in the exception file of `LIKE` pattern
+[12:42:39 PM] User ILBBDOTSTH04 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User ILBBDOTSTH05 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User ILBBDOTSTH06 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User ILBBDOTSTH07 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User ILBBDOTSTH08 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User ILBBDOTSTH09 matched an entry in the exception file of `LIKE` pattern
+[12:42:40 PM] User uxmtester matched an entry in the exception file of `EXACT` pattern
+[12:42:40 PM] User FreeMoney2013 matched an entry in the exception file of `LIKE` pattern
+[12:42:41 PM]  User nroldan disabled. Path: CN=Roldan\, Nichole,OU=RT,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (22-Feb-17 2:56:09 PM)
+[12:42:50 PM]  User thGBautista disabled. Path: CN=Bautista\, Geraldine,OU=Thane,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (21-Mar-17 10:16:52 PM)
+[12:42:57 PM] User unixsys.ldap.test matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTNTH03 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTNTH04 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTNTH05 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBPICK02 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTNTH07 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTNTH08 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN01 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN03 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN04 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN05 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN06 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN07 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN08 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN09 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN10 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN11 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBRTN12 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User ILBBJOBS01 matched an entry in the exception file of `LIKE` pattern
+[12:42:57 PM] User virus matched an entry in the exception file of `EXACT` pattern
+[12:42:59 PM]  User agarcia disabled. Path: CN=Garcia\, Alejandra,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (17-Mar-17 5:25:31 PM)
+[12:43:06 PM] User arris matched an entry in the exception file of `EXACT` pattern
+[12:43:06 PM] User unixsys.ldap.verify matched an entry in the exception file of `LIKE` pattern
+[12:43:06 PM] User ilbbsoldierfield matched an entry in the exception file of `LIKE` pattern
+[12:43:09 PM]  User llara disabled. Path: CN=Lara\, Luis,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (31-Mar-17 1:59:18 PM)
+[12:43:15 PM] User ilbbatpack07 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack08 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack09 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack10 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack11 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack12 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack13 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack14 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack15 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack16 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack17 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack19 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack20 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack21 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack22 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack24 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack25 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack28 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack29 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack31 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack32 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack33 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack34 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack35 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack36 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack37 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack38 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack39 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack40 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack41 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack42 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack43 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbatpack44 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User arristraining matched an entry in the exception file of `EXACT` pattern
+[12:43:15 PM] User pcrwebsiteissues matched an entry in the exception file of `EXACT` pattern
+[12:43:15 PM] User ILBBRCVCC01 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ILBBRCVCC02 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User GhostOHGPGHOSTSERVER matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack03 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack04 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack05 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack06 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack07 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack01 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ilbbvivpack02 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User tssalerts-bbird matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ILBBRCVCC03 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User ILBBRCVCC04 matched an entry in the exception file of `LIKE` pattern
+[12:43:15 PM] User Shopko matched an entry in the exception file of `EXACT` pattern
+[12:43:15 PM] User pshopkoescalation matched an entry in the exception file of `EXACT` pattern
+[12:43:18 PM]  User iruiz disabled. Path: CN=Ruiz\, Irasema,OU=Leads,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (16-Feb-17 12:32:18 PM)
+[12:43:25 PM] User Peak10support matched an entry in the exception file of `EXACT` pattern
+[12:43:25 PM] User naturalcures matched an entry in the exception file of `EXACT` pattern
+[12:43:26 PM]  User cstone disabled. Path: CN=Stone\, Craig,OU=Leads,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (02-Apr-17 5:21:21 AM)
+[12:43:35 PM] User ilbbstrpack01 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack02 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack03 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack04 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack06 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack07 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilbbstrpack08 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User system4knees matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User zumba matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User INOCShopkoissue matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User cebria matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User lrjs matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User prosventcs matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User unixsys.atl.wmdev.ld matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack01 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack02 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack03 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack04 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack05 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack06 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack08 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User ilrvvivapack09 matched an entry in the exception file of `LIKE` pattern
+[12:43:35 PM] User eloquii matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User peloquiiescalation matched an entry in the exception file of `EXACT` pattern
+[12:43:35 PM] User wilsonscs matched an entry in the exception file of `EXACT` pattern
+[12:43:36 PM]  User msVPavlov disabled. Path: CN=Pavlovski\, Valeri,OU=MS Clientlogic,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (22-Mar-17 9:41:42 AM)
+[12:43:42 PM] User support.ebay.wilsons matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User pwilsonsesc matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User dermawow matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User readpainrelief matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User wilsonschatbox matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User pmkjacobsesc matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User IWAM_GANCGCT01 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack01 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack04 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack10 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack19 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack31 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack35 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack37 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack38 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack41 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack42 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack43 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack44 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack45 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack46 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack47 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack48 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack50 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack53 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack54 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack55 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack56 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack59 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack60 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack62 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack65 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User ilrvpack66 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User jcore matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User profemin matched an entry in the exception file of `EXACT` pattern
+[12:43:42 PM] User cardrcv01 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcv02 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcv03 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvgoh01 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvgoh02 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvgoh03 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvgoh04 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvflats01 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvflats02 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvflats03 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardrcvflats04 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardpack13 matched an entry in the exception file of `LIKE` pattern
+[12:43:42 PM] User cardpack28 matched an entry in the exception file of `LIKE` pattern
+[12:43:43 PM]  User enino disabled. Path: CN=Nino\, Elena,OU=Inventory Control,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (06-Feb-17 10:50:03 AM)
+[12:43:51 PM]  User pwonderlin disabled. Path: CN=Wonderlin\, Paul,OU=Operations,OU=Office,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (08-Feb-17 12:36:05 PM)
+[12:43:59 PM]  User cfox disabled. Path: CN=Fox\, Cecelia,OU=Supervisor,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (15-Mar-17 5:20:09 PM)
+[12:44:06 PM] User pdmcrcqa matched an entry in the exception file of `EXACT` pattern
+[12:44:06 PM] User cardic01 matched an entry in the exception file of `LIKE` pattern
+[12:44:06 PM] User cardic02 matched an entry in the exception file of `LIKE` pattern
+[12:44:06 PM] User ghbasshelp matched an entry in the exception file of `EXACT` pattern
+[12:44:06 PM] User aquatru matched an entry in the exception file of `EXACT` pattern
+[12:44:06 PM] User ghbasschatbox matched an entry in the exception file of `EXACT` pattern
+[12:44:08 PM]  User ttye disabled. Path: CN=Tye\, Talisha,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (22-Feb-17 5:14:36 PM)
+[12:44:14 PM] User IWAM_GALVDC02 matched an entry in the exception file of `LIKE` pattern
+[12:44:14 PM] User IUSR_GALVDC02 matched an entry in the exception file of `LIKE` pattern
+[12:44:16 PM]  User sblake disabled. Path: CN=Blake\, Shellby,OU=DR,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (03-Apr-17 8:53:26 AM)
+[12:44:21 PM] User ILBBSHOP01 matched an entry in the exception file of `LIKE` pattern
+[12:44:21 PM] User cardjobs01 matched an entry in the exception file of `LIKE` pattern
+[12:44:21 PM] User ilrvjobs01 matched an entry in the exception file of `LIKE` pattern
+[12:44:24 PM]  User mgilbert disabled. Path: CN=Gilbert\, Matt,OU=Managers,OU=Office,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (22-Mar-17 10:30:58 AM)
+[12:44:30 PM] User IUSR_CARDDC01 matched an entry in the exception file of `LIKE` pattern
+[12:44:30 PM] User IWAM_CARDDC01 matched an entry in the exception file of `LIKE` pattern
+[12:44:33 PM]  User algarcia disabled. Path: CN=Garcia\, Alejandra,OU=Lead,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (27-Feb-17 4:34:46 PM)
+[12:44:40 PM] User ilrvvivrcv01 matched an entry in the exception file of `LIKE` pattern
+[12:44:40 PM] User wweopenorders matched an entry in the exception file of `EXACT` pattern
+[12:44:43 PM]  User camador disabled. Path: CN=Amador\, Carlos,OU=Leads,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (27-Feb-17 12:29:12 PM)
+[12:44:51 PM]  User manassociates disabled. Path: CN=Associates\, Mannhattan,OU=Development,OU=IT,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (02-Mar-17 1:51:33 AM)
+[12:45:02 PM]  User mchaparro disabled. Path: CN=Chaparro\, Melissa,OU=Inventory Control,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (20-Feb-17 1:57:58 PM)
+[12:45:12 PM] User ilrvpack88 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack87 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack86 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack85 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack84 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack79 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack77 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack76 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack70 matched an entry in the exception file of `LIKE` pattern
+[12:45:12 PM] User ilrvpack69 matched an entry in the exception file of `LIKE` pattern
+[12:45:15 PM]  User lcervantes disabled. Path: CN=Cervantes\, Luz,OU=Leads,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (27-Feb-17 4:19:49 PM)
+[12:45:22 PM] User support.Amazon.Wilso matched an entry in the exception file of `EXACT` pattern
+[12:45:22 PM] User ilbbatpack47 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack48 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack49 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack50 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack51 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack52 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack53 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack54 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack55 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack57 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack59 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack60 matched an entry in the exception file of `LIKE` pattern
+[12:45:22 PM] User ilbbatpack61 matched an entry in the exception file of `LIKE` pattern
+[12:45:25 PM]  User tmiller1 disabled. Path: CN=Miller\, Tiffany,OU=Supervisors,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (12-Mar-17 10:42:57 AM)
+[12:45:34 PM]  User mmarsh disabled. Path: CN=Marsh\, Maaike,OU=Sales,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (21-Mar-17 1:03:55 PM)
+[12:45:43 PM]  User sduarte3 disabled. Path: CN=Duarte\, Sabino,OU=Supervisors,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (24-Mar-17 2:51:54 PM)
+[12:45:50 PM] User INOCELQIssue matched an entry in the exception file of `EXACT` pattern
+[12:45:50 PM] User travelclean matched an entry in the exception file of `EXACT` pattern
+[12:45:50 PM] User comfortissejeggings matched an entry in the exception file of `EXACT` pattern
+[12:45:50 PM] User ilbbdisplay matched an entry in the exception file of `LIKE` pattern
+[12:45:50 PM] User ma matched an entry in the exception file of `EXACT` pattern
+[12:45:50 PM] User ragandbone matched an entry in the exception file of `EXACT` pattern
+[12:45:50 PM] User tssalerts-Redlands matched an entry in the exception file of `LIKE` pattern
+[12:45:50 PM] User tssalerts-Memphis matched an entry in the exception file of `LIKE` pattern
+[12:45:50 PM] User lemonpop matched an entry in the exception file of `EXACT` pattern
+[12:45:52 PM]  User focana disabled. Path: CN=Ocana\, Fabiola,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (24-Feb-17 8:11:52 AM)
+[12:45:58 PM] User perfectsaw matched an entry in the exception file of `EXACT` pattern
+[12:45:58 PM] User summershaperjeggings matched an entry in the exception file of `EXACT` pattern
+[12:45:58 PM] User sassyshaper matched an entry in the exception file of `EXACT` pattern
+[12:46:00 PM]  User ncox disabled. Path: CN=Cox\, Nicole,OU=Human Resources,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (24-Mar-17 8:53:01 AM)
+[12:46:06 PM] User gsnaturalnews matched an entry in the exception file of `EXACT` pattern
+[12:46:06 PM] User IWAM_TNMEDC01 matched an entry in the exception file of `LIKE` pattern
+[12:46:06 PM] User IUSR_TNMEDC01 matched an entry in the exception file of `LIKE` pattern
+[12:46:07 PM]  User galvspxpack03 disabled. Path: CN=galvspxpack03,OU=Generic Logins,OU=Warehouse,OU=GALV,OU=Georgia,DC=innotrac,DC=com Last Logon:  (21-Feb-17 1:25:00 PM)
+[12:46:14 PM] User tnmepack01 matched an entry in the exception file of `LIKE` pattern
+[12:46:14 PM] User tnmercv007 matched an entry in the exception file of `LIKE` pattern
+[12:46:14 PM] User tnmercv006 matched an entry in the exception file of `LIKE` pattern
+[12:46:15 PM]  User rmills disabled. Path: CN=Mills\, Reginald,OU=Lead,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (03-Mar-17 3:06:39 PM)
+[12:46:25 PM]  User dwoods disabled. Path: CN=Woods\, Davonna,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (14-Feb-17 3:32:07 PM)
+[12:46:34 PM] User TNMEAdmin matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv001 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv002 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv003 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv004 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv005 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv008 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv009 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv010 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv011 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv012 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv013 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv014 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv015 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv016 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv017 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv018 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv019 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv020 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv021 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv022 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv023 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv024 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv025 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv026 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv028 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv029 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv030 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv031 matched an entry in the exception file of `LIKE` pattern
+[12:46:34 PM] User tnmercv032 matched an entry in the exception file of `LIKE` pattern
+[12:46:35 PM]  User jmayer disabled. Path: CN=Mayer\, Jason,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (05-Apr-17 4:57:08 PM)
+[12:46:43 PM] User tnmercv033 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV034 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV035 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV036 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV037 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV038 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV039 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV040 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV041 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV042 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV043 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV044 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV045 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV046 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV047 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV048 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV049 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV050 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV051 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV052 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV053 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV054 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV055 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV056 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV057 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV058 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV059 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV060 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV061 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV062 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV063 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV064 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV065 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV066 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV067 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV068 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV069 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV070 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV071 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV072 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV073 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV074 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV075 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV076 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV077 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV078 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV079 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV080 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV082 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV083 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV084 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV085 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV086 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV087 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV088 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV089 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV090 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV091 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV092 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV093 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV094 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV095 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV096 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV097 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV098 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV099 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV100 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV101 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV102 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV103 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV104 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV105 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV106 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV107 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV108 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV109 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV110 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV111 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV112 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV113 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV114 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV115 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV116 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV117 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV118 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV119 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV120 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV121 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV122 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV123 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV124 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV125 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV126 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV127 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV128 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV129 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV130 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV131 matched an entry in the exception file of `LIKE` pattern
+[12:46:43 PM] User TNMERCV132 matched an entry in the exception file of `LIKE` pattern
+[12:46:45 PM]  User elee disabled. Path: CN=Lee\, Elizabeth,OU=RT,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Feb-17 12:33:35 PM)
+[12:46:55 PM] User TNMERCV133 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV134 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV135 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV136 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV137 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV138 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV139 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV140 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV141 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV142 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV143 matched an entry in the exception file of `LIKE` pattern
+[12:46:55 PM] User TNMERCV144 matched an entry in the exception file of `LIKE` pattern
+[12:46:57 PM]  User aspoutbound disabled. Path: CN=aspoutbound,OU=Service Accounts,OU=IT,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:57:05 AM)
+[12:47:08 PM]  User aspreview disabled. Path: CN=aspreview,OU=Service Accounts,OU=IT,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:54:46 AM)
+[12:47:18 PM]  User aspinbound disabled. Path: CN=aspinbound,OU=Service Accounts,OU=IT,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:52:37 AM)
+[12:47:28 PM]  User IBROWN2 disabled. Path: CN=Brown\, Isabell,OU=Inventory Control,OU=Warehouse,OU=KYCN,OU=Kentucky,DC=innotrac,DC=com Last Logon:  (01-Mar-17 8:52:47 AM)
+[12:47:35 PM] User croutbound matched an entry in the exception file of `EXACT` pattern
+[12:47:35 PM] User crreview matched an entry in the exception file of `EXACT` pattern
+[12:47:35 PM] User cardrf matched an entry in the exception file of `LIKE` pattern
+[12:47:37 PM]  User behernandez disabled. Path: CN=Hernandez\, Brenda E,OU=Leads,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (07-Feb-17 3:26:42 PM)
+[12:47:44 PM] User TNMEPTL02 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS01 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS02 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS03 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS04 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS05 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS06 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS07 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS08 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS09 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS10 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS11 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS12 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS13 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS14 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS15 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS16 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS17 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS18 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS19 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESBS20 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS01 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS02 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS03 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS04 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS05 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS06 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS07 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS08 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS09 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS10 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS11 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEMBS12 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS01 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS02 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS03 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS04 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS05 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS06 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS07 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS08 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS09 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMEABS10 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESRA01 matched an entry in the exception file of `LIKE` pattern
+[12:47:44 PM] User TNMESRA02 matched an entry in the exception file of `LIKE` pattern
+[12:47:46 PM]  User mmartinez2 disabled. Path: CN=Martinez\, Michelle,OU=CRC,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (02-Feb-17 2:17:21 PM)
+[12:48:01 PM]  User gvillanueva disabled. Path: CN=Villanueva\, Grisel,OU=Associates,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (13-Feb-17 7:44:05 AM)
+[12:48:11 PM]  User jmoreno disabled. Path: CN=Moreno\, Jhoana,OU=Associates,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (21-Feb-17 1:12:58 PM)
+[12:48:19 PM] User tnmeprobres02 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres01 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres05 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres03 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEGIFTW05 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres04 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEGIFTW01 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres06 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User tnmeprobres07 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEGIFTW02 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEGIFTW04 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEGIFTW03 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEMANBAG7 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEPACKS02 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEPACKS01 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEPACKS08 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEPACKS06 matched an entry in the exception file of `LIKE` pattern
+[12:48:19 PM] User TNMEAUTOB01 matched an entry in the exception file of `LIKE` pattern
+[12:48:22 PM]  User kjohnson disabled. Path: CN=Johnson\, Kandice,OU=Leads,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (05-Feb-17 8:53:11 AM)
+[12:48:30 PM] User puebloithelpdesk matched an entry in the exception file of `LIKE` pattern
+[12:48:30 PM] User puebloithelpdeskib matched an entry in the exception file of `LIKE` pattern
+[12:48:30 PM] User puebloithelpdeskob matched an entry in the exception file of `LIKE` pattern
+[12:48:30 PM] User puebloithelpdeskrvw matched an entry in the exception file of `LIKE` pattern
+[12:48:30 PM] User TNMEWGHTREJ02 matched an entry in the exception file of `LIKE` pattern
+[12:48:30 PM] User TNMEPROBRES09 matched an entry in the exception file of `LIKE` pattern
+[12:48:32 PM]  User nsoto disabled. Path: CN=Soto\, Nanette,OU=DR,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (31-Jan-17 3:33:31 PM)
+[12:48:43 PM] User wilsonbassopens matched an entry in the exception file of `EXACT` pattern
+[12:48:43 PM] User GhostILBBVMGHOST01 matched an entry in the exception file of `LIKE` pattern
+[12:48:46 PM]  User ancollins disabled. Path: CN=Collins\, Anthony,OU=Supervisors,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (22-Mar-17 9:34:31 AM)
+[12:49:00 PM]  User mkiser disabled. Path: CN=Kiser\, Monica,OU=Associates,OU=Warehouse,OU=KYCN,OU=Kentucky,DC=innotrac,DC=com Last Logon:  (09-Feb-17 10:52:48 AM)
+[12:49:09 PM] User TNMEICC2 matched an entry in the exception file of `LIKE` pattern
+[12:49:09 PM] User TNMEICC1 matched an entry in the exception file of `LIKE` pattern
+[12:49:09 PM] User TNMEMEZZ01 matched an entry in the exception file of `LIKE` pattern
+[12:49:12 PM]  User mdevries disabled. Path: CN=DeVries\, Mark,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (25-Feb-17 8:45:43 AM)
+[12:49:22 PM] User TNMEDISPATCH01 matched an entry in the exception file of `LIKE` pattern
+[12:49:22 PM] User tnmesec03 matched an entry in the exception file of `LIKE` pattern
+[12:49:25 PM]  User dhughes disabled. Path: CN=Hughes\, Demareous,OU=Leads,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (18-Mar-17 4:11:34 PM)
+[12:49:35 PM] User crinbound matched an entry in the exception file of `EXACT` pattern
+[12:49:37 PM]  User estarks disabled. Path: CN=Starks\, Elnora,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (08-Mar-17 12:38:29 AM)
+[12:49:42 PM] User TNMEADMIN01 matched an entry in the exception file of `LIKE` pattern
+[12:49:44 PM]  User ashinofield disabled. Path: CN=Shinofield\, Audra,OU=Virtual Agent,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (25-Feb-17 7:09:30 PM)
+[12:49:50 PM] User TNMEGIFTW11 matched an entry in the exception file of `LIKE` pattern
+[12:49:50 PM] User TNMEGIFTW12 matched an entry in the exception file of `LIKE` pattern
+[12:49:50 PM] User TNMEGIFTW13 matched an entry in the exception file of `LIKE` pattern
+[12:49:50 PM] User TNMEGIFTW14 matched an entry in the exception file of `LIKE` pattern
+[12:49:50 PM] User TNMEGIFTW15 matched an entry in the exception file of `LIKE` pattern
+[12:49:50 PM] User TNMEGIFTW16 matched an entry in the exception file of `LIKE` pattern
+[12:49:52 PM]  User cnason disabled. Path: CN=Nason\, Cressica,OU=Inventory Control,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (07-Feb-17 6:16:31 AM)
+[12:49:59 PM]  User tlockett disabled. Path: CN=Lockett\, Takeisha,OU=Inventory Control,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (28-Mar-17 8:10:38 AM)
+[12:50:10 PM]  User bwheat disabled. Path: CN=Wheat\, Bradley,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 5:13:20 PM)
+[12:50:16 PM] User ilrvwil05 matched an entry in the exception file of `LIKE` pattern
+[12:50:16 PM] User ilrvwil06 matched an entry in the exception file of `LIKE` pattern
+[12:50:16 PM] User ilrvwil07 matched an entry in the exception file of `LIKE` pattern
+[12:50:16 PM] User ilrvwil08 matched an entry in the exception file of `LIKE` pattern
+[12:50:16 PM] User ilrvwil04 matched an entry in the exception file of `LIKE` pattern
+[12:50:17 PM]  User jreynoso disabled. Path: CN=Reynoso\, Juan,OU=Lead,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (27-Mar-17 7:24:04 PM)
+[12:50:22 PM] User tnmemezz06 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User tnmemezz07 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ilrvpack89 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User MemphisCareers matched an entry in the exception file of `EXACT` pattern
+[12:50:22 PM] User ILBBRCV01 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV02 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV03 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV04 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV05 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV06 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV07 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV08 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV09 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV10 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV11 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User ILBBRCV12 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User tnmepks06 matched an entry in the exception file of `LIKE` pattern
+[12:50:22 PM] User tnmepks023 matched an entry in the exception file of `LIKE` pattern
+[12:50:24 PM]  User jpfeifer disabled. Path: CN=Pfeifer\, Jennifer,OU=DR,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (14-Mar-17 11:26:24 AM)
+[12:50:30 PM] User TNMECONFROOM matched an entry in the exception file of `LIKE` pattern
+[12:50:33 PM]  User erhenderson disabled. Path: CN=Henderson\, Eric,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (21-Mar-17 4:27:39 PM)
+[12:50:42 PM]  User zchavez disabled. Path: CN=Chavez\, Zenaida,OU=Inventory Control,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (13-Feb-17 9:10:40 AM)
+[12:50:49 PM] User TNMEPROBRES10 matched an entry in the exception file of `LIKE` pattern
+[12:50:49 PM] User TNMEPROBRES11 matched an entry in the exception file of `LIKE` pattern
+[12:50:50 PM]  User charmingcharlieib2 disabled. Path: CN=charmingcharlieib2,OU=Client CS Email,OU=CRC,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 3:01:48 AM)
+[12:51:00 PM]  User lmcgee disabled. Path: CN=McGee Jr\, Larry,OU=Inventory Control,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (28-Feb-17 1:24:42 AM)
+[12:51:05 PM] User TNMETESTTRAIN matched an entry in the exception file of `LIKE` pattern
+[12:51:08 PM]  User charmingcharlieob2 disabled. Path: CN=charmingcharlieob2,OU=Client CS Email,OU=CRC,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:57:33 AM)
+[12:51:14 PM] User TNMEPROBRES12 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES13 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES14 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES15 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES16 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES17 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES18 matched an entry in the exception file of `LIKE` pattern
+[12:51:14 PM] User TNMEPROBRES19 matched an entry in the exception file of `LIKE` pattern
+[12:51:15 PM]  User charmingcharliervw2 disabled. Path: CN=charmingcharliervw2,OU=Client CS Email,OU=CRC,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:54:11 AM)
+[12:51:22 PM] User ilbbstr08 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ilbbpack130 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack63 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack65 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack67 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack69 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack68 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ilbbofpack01 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK03 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK05 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK06 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK07 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK10 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK11 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK13 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK14 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK04 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack71 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User Cardpack72 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User ILBBOFPACK12 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User TNMERCV145 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User TNMERCV322 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User naturalhealthsolutio matched an entry in the exception file of `EXACT` pattern
+[12:51:22 PM] User TNMERCV146 matched an entry in the exception file of `LIKE` pattern
+[12:51:22 PM] User TNMERCV147 matched an entry in the exception file of `LIKE` pattern
+[12:51:23 PM]  User fbrooks disabled. Path: CN=Brooks\, Frankie,OU=Inventory Control,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (12-Mar-17 5:43:11 AM)
+[12:51:30 PM] User Cardpack73 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBDOTSTH10 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBDOTSTH11 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User Cardpack76 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User TNMECONFROOM2 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH09 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH10 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH11 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH12 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH13 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH14 matched an entry in the exception file of `LIKE` pattern
+[12:51:30 PM] User ILBBRTNTH15 matched an entry in the exception file of `LIKE` pattern
+[12:51:35 PM]  User sash disabled. Path: CN=Ash\, Shanell,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (18-Feb-17 9:01:56 AM)
+[12:51:40 PM] User pueblortanalysts matched an entry in the exception file of `LIKE` pattern
+[12:51:40 PM] User TNMEPROBRES20 matched an entry in the exception file of `LIKE` pattern
+[12:51:40 PM] User TNMEPROBRES21 matched an entry in the exception file of `LIKE` pattern
+[12:51:42 PM]  User dsmothers disabled. Path: CN=Smothers\, D'Andre,OU=Leads,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (25-Mar-17 5:51:21 PM)
+[12:51:47 PM] User TNMEPDS10 matched an entry in the exception file of `LIKE` pattern
+[12:51:47 PM] User TNMEPDS11 matched an entry in the exception file of `LIKE` pattern
+[12:51:48 PM]  User hdelay disabled. Path: CN=Delay\, Hunter,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (24-Feb-17 2:06:26 PM)
+[12:51:52 PM] User TNMERCV027 matched an entry in the exception file of `LIKE` pattern
+[12:51:53 PM]  User kvelasquez disabled. Path: CN=Velasquez\, Kandace,OU=Associates,OU=Warehouse,OU=GALV,OU=Georgia,DC=innotrac,DC=com Last Logon:  (14-Mar-17 12:34:54 PM)
+[12:51:57 PM] User GhostGALVSEVANS matched an entry in the exception file of `LIKE` pattern
+[12:51:57 PM] User Cardpack80 matched an entry in the exception file of `LIKE` pattern
+[12:51:59 PM]  User dglhrabsky disabled. Path: CN=Hrabsky\, Lauren,OU=DEMG,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (27-Feb-17 11:26:27 AM)
+[12:52:03 PM] User TNMESECURITY1 matched an entry in the exception file of `LIKE` pattern
+[12:52:04 PM]  User mamurillo disabled. Path: CN=Murillo\, Maricela,OU=Associates,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (24-Mar-17 2:45:56 PM)
+[12:52:09 PM]  User ocmaruiz disabled. Path: CN=Ruiz\, Miguel,OU=Sylmark,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (02-Feb-17 11:40:50 AM)
+[12:52:13 PM] User cardtest matched an entry in the exception file of `LIKE` pattern
+[12:52:15 PM]  User jasmith disabled. Path: CN=Smith\, Jason,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (27-Mar-17 1:52:49 AM)
+[12:52:20 PM]  User lrussell disabled. Path: CN=Russell\, Lakisha,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (14-Mar-17 5:41:01 PM)
+[12:52:24 PM] User PuebloRT1TL matched an entry in the exception file of `LIKE` pattern
+[12:52:25 PM]  User jmounts disabled. Path: CN=Mounts\, Jimmy,OU=Inventory Control,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (08-Mar-17 7:51:30 AM)
+[12:52:29 PM] User Ilbbrcvlead04 matched an entry in the exception file of `LIKE` pattern
+[12:52:29 PM] User ilbbstr04 matched an entry in the exception file of `LIKE` pattern
+[12:52:29 PM] User ILBBRTNLEAD matched an entry in the exception file of `LIKE` pattern
+[12:52:31 PM]  User jmcguire disabled. Path: CN=McGuire\, Jeremiah,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (24-Mar-17 5:48:16 AM)
+[12:52:35 PM] User ILBBRTN18 matched an entry in the exception file of `LIKE` pattern
+[12:52:35 PM] User ILBBRCVLEAD02 matched an entry in the exception file of `LIKE` pattern
+[12:52:35 PM] User TNMETABLET01 matched an entry in the exception file of `LIKE` pattern
+[12:52:35 PM] User ILBBBEARWARE matched an entry in the exception file of `LIKE` pattern
+[12:52:35 PM] User ilrvzmbrtn02 matched an entry in the exception file of `LIKE` pattern
+[12:52:36 PM]  User elqmorrell disabled. Path: CN=Orrell\, Mary,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (13-Mar-17 9:21:40 AM)
+[12:52:40 PM] User rhernandez matched an entry in the exception file of `EXACT` pattern
+[12:52:40 PM] User ezclear matched an entry in the exception file of `EXACT` pattern
+[12:52:40 PM] User ILBBRTN19 matched an entry in the exception file of `LIKE` pattern
+[12:52:40 PM] User Cardcmdctr01 matched an entry in the exception file of `LIKE` pattern
+[12:52:41 PM]  User lpadilla disabled. Path: CN=Padilla\, Librada,OU=Inventory Control,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (20-Feb-17 3:57:58 PM)
+[12:52:47 PM]  User cshourek disabled. Path: CN=Shourek\, Candy,OU=Lead,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (28-Feb-17 3:28:02 PM)
+[12:52:51 PM] User TNMERCV150 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV151 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV152 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV153 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV154 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV155 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV156 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV157 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV158 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV160 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV161 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV162 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV163 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User TNMERCV164 matched an entry in the exception file of `LIKE` pattern
+[12:52:51 PM] User peekkids matched an entry in the exception file of `EXACT` pattern
+[12:52:52 PM]  User ockoacacer disabled. Path: CN=Caceres\, Kevin,OU=Sylmark,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (04-Mar-17 1:56:20 PM)
+[12:52:58 PM]  User ocgabtrejo disabled. Path: CN=Trejo\, Gilberto,OU=Sylmark,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (14-Mar-17 9:11:50 AM)
+[12:53:02 PM] User TNMEITTEST01 matched an entry in the exception file of `LIKE` pattern
+[12:53:03 PM]  User dsteffey disabled. Path: CN=Steffey\, David,OU=Development,OU=IT,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (07-Mar-17 4:02:15 PM)
+[12:53:08 PM] User ILBBHBPR01 matched an entry in the exception file of `LIKE` pattern
+[12:53:08 PM] User ILBBHBPR02 matched an entry in the exception file of `LIKE` pattern
+[12:53:09 PM]  User jscurti disabled. Path: CN=Scurti\, Jordan,OU=Client Services,OU=Reno,DC=innotrac,DC=com Last Logon:  (20-Feb-17 11:09:15 AM)
+[12:53:14 PM] User ILBBATPACK30 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User ILBBATPACKLEAD4 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV324 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMETRAIN20 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEMANBAG06 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User tnmercv400 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPKS28 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV500 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV501 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV502 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV503 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV505 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV506 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV508 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV511 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV512 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV514 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV515 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV519 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV518 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV517 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV523 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV522 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV527 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMETRAIN21 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV531 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV536 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV539 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV541 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV549 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV552 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV554 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV555 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV557 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV558 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV560 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV561 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV562 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV563 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV564 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV565 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV566 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV567 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV568 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV569 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMERCV570 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEBULK501 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEBULK503 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEBULK504 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEBULK505 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROB501 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROB502 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROB503 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROB504 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROB505 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEGIFTW06 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEGIFTW07 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEGIFTW08 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEGIFTW09 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEGIFTW10 matched an entry in the exception file of `LIKE` pattern
+[12:53:14 PM] User TNMEPROBRCV505 matched an entry in the exception file of `LIKE` pattern
+[12:53:15 PM]  User jbroomfield disabled. Path: CN=Broomfield\, Jennell,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (22-Feb-17 6:39:54 PM)
+[12:53:19 PM] User kowa matched an entry in the exception file of `EXACT` pattern
+[12:53:20 PM]  User dajimenez disabled. Path: CN=Jimenez\, Daniela,OU=Lead,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (27-Mar-17 2:29:58 PM)
+[12:53:26 PM]  User svcDMMAD disabled. Path: CN=svcDMMAD,OU=Enterprise Service Accounts,DC=innotrac,DC=com Last Logon:  (01-Mar-17 10:59:59 AM)
+[12:53:30 PM] User TNMETV matched an entry in the exception file of `LIKE` pattern
+[12:53:31 PM]  User dcervantes disabled. Path: CN=Cervantes\, Diana,OU=Associates,OU=Warehouse,OU=ILRV,OU=Illinois,DC=innotrac,DC=com Last Logon:  (13-Feb-17 7:04:26 AM)
+[12:53:36 PM]  User ckeaton disabled. Path: CN=Keaton\, Charlie,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (01-Apr-17 8:09:03 PM)
+[12:53:42 PM]  User erringtonj disabled. Path: CN=Errington\, John,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (24-Feb-17 12:53:03 PM)
+[12:53:46 PM] User Cardinbound2 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User Cardinbound1 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User Cardpack83 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User Cardpack84 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User cardrcvshoes01 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK01 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK02 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK03 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK04 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK05 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN01 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN06 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN07 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK06 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERCV01 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERCV02 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERCV03 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERCV04 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN02 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN03 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVERTN04 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK07 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK08 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK09 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBOFPACK08 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEPACK10 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBWILRCV01 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILRVHUBO02 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User Cardpack85 matched an entry in the exception file of `LIKE` pattern
+[12:53:46 PM] User ILBBEVEIC01 matched an entry in the exception file of `LIKE` pattern
+[12:53:47 PM]  User rallen disabled. Path: CN=Allen\, Robert,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (26-Feb-17 3:34:37 PM)
+[12:53:51 PM] User TNMEPROBRES301 matched an entry in the exception file of `LIKE` pattern
+[12:53:51 PM] User TNMEPROBRES302 matched an entry in the exception file of `LIKE` pattern
+[12:53:51 PM] User TNMEPROBRES303 matched an entry in the exception file of `LIKE` pattern
+[12:53:51 PM] User HRTest matched an entry in the exception file of `LIKE` pattern
+[12:53:51 PM] User ILBBWILRCV02 matched an entry in the exception file of `LIKE` pattern
+[12:53:53 PM]  User kmartin disabled. Path: CN=Martin\, Kari,OU=Operations,OU=Office,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (20-Feb-17 8:57:09 AM)
+[12:53:57 PM] User RNOTEST$ matched an entry in the exception file of `EXACT` pattern
+[12:53:58 PM]  User ocjarsanch disabled. Path: CN=Sanchez\, Jose,OU=Sylmark,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (09-Feb-17 10:06:12 AM)
+[12:54:03 PM]  User wmoten disabled. Path: CN=Moten\, Willie,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (29-Mar-17 6:26:41 PM)
+[12:54:09 PM]  User aleal disabled. Path: CN=Leal\, Alexa,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (08-Mar-17 10:54:54 AM)
+[12:54:13 PM] User ILBBRTN16 matched an entry in the exception file of `LIKE` pattern
+[12:54:14 PM]  User dankahl disabled. Path: CN=Kahl\, Dan,OU=KOP,DC=innotrac,DC=com Last Logon:  (13-Feb-17 5:47:10 PM)
+[12:54:18 PM] User GhostCARDGHOST01 matched an entry in the exception file of `LIKE` pattern
+[12:54:19 PM]  User chyocum disabled. Path: CN=Yocum\, Chris,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (27-Feb-17 12:43:34 PM)
+[12:54:25 PM]  User seinj disabled. Path: CN=Sein\, Jennifer,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (06-Mar-17 7:06:43 AM)
+[12:54:30 PM]  User ccccook disabled. Path: CN=Cook\, Catoria,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (27-Feb-17 11:45:17 AM)
+[12:54:34 PM] User ILRVHUBO11 matched an entry in the exception file of `LIKE` pattern
+[12:54:36 PM]  User jamesc2 disabled. Path: CN=James\, Cadeila,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (28-Feb-17 6:13:02 AM)
+[12:54:41 PM]  User vbarragan disabled. Path: CN=Barragan\, Veronica,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Feb-17 11:20:26 PM)
+[12:54:46 PM]  User eltomlinson disabled. Path: CN=Tomlinson\, Elaine,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (22-Feb-17 7:21:13 PM)
+[12:54:52 PM]  User ccmpope disabled. Path: CN=Pope\, Menelik,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (10-Feb-17 11:08:17 AM)
+[12:54:57 PM]  User ccfjoseph disabled. Path: CN=Joseph\, Fridlyne,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (06-Feb-17 10:31:11 AM)
+[12:55:03 PM]  User mkapia disabled. Path: CN=Kapia\, Monique,OU=Supervisors,OU=Warehouse,OU=GALV,OU=Georgia,DC=innotrac,DC=com Last Logon:  (27-Feb-17 12:16:39 PM)
+[12:55:08 PM]  User sjones2 disabled. Path: CN=Jones\, Sharon,OU=Associates,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (21-Feb-17 8:19:07 PM)
+[12:55:12 PM] User cardtv02 matched an entry in the exception file of `LIKE` pattern
+[12:55:12 PM] User cardtv01 matched an entry in the exception file of `LIKE` pattern
+[12:55:14 PM]  User ctolley disabled. Path: CN=Tolley\, Christina,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (04-Feb-17 5:49:38 PM)
+[12:55:19 PM]  User pflannery disabled. Path: CN=Flannery\, Patrick,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (23-Mar-17 12:45:15 PM)
+[12:55:25 PM]  User cascamacho disabled. Path: CN=Camacho\, Casandra,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Feb-17 11:52:30 AM)
+[12:55:30 PM]  User faurej disabled. Path: CN=Faure\, Julia,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (18-Mar-17 5:30:12 PM)
+[12:55:34 PM] User TNMERTSGATE matched an entry in the exception file of `LIKE` pattern
+[12:55:35 PM]  User bentonl disabled. Path: CN=Benton\, Lisa,OU=KOP,DC=innotrac,DC=com Last Logon:  (08-Feb-17 2:30:41 PM)
+[12:55:40 PM]  User jfrance disabled. Path: CN=France\, Jessica,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (23-Mar-17 3:18:57 PM)
+[12:55:46 PM]  User lchellamuthu disabled. Path: CN=Chellamuthu\, Loganayaki,OU=IT,OU=Office,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (27-Mar-17 1:18:51 AM)
+[12:55:51 PM]  User ajbennett disabled. Path: CN=Bennett\, Alan,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (11-Feb-17 11:21:27 PM)
+[12:55:56 PM]  User karenbrown disabled. Path: CN=Brown\, Karen,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (06-Mar-17 11:22:17 PM)
+[12:56:02 PM]  User dmilleret disabled. Path: CN=Milleret\, Divine,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (19-Feb-17 8:05:46 PM)
+[12:56:08 PM]  User cascott disabled. Path: CN=Scott\, Carol,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Mar-17 11:24:11 PM)
+[12:56:13 PM]  User zsieber disabled. Path: CN=Sieber\, Zachary,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (24-Feb-17 10:47:25 PM)
+[12:56:19 PM]  User kwall disabled. Path: CN=Wall\, Kenneth,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (17-Mar-17 11:35:37 PM)
+[12:56:24 PM]  User parkerd disabled. Path: CN=Parker\, Frank,OU=KOP,DC=innotrac,DC=com Last Logon:  (28-Feb-17 4:06:45 PM)
+[12:56:30 PM]  User crbrown disabled. Path: CN=Brown\, Crystal,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (15-Mar-17 11:28:43 PM)
+[12:56:35 PM]  User pferrell disabled. Path: CN=Ferrell\, Patricia,OU=Executives,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (20-Mar-17 9:42:57 AM)
+[12:56:39 PM] User c2asos36 matched an entry in the exception file of `LIKE` pattern
+[12:56:39 PM] User c2asosreturns matched an entry in the exception file of `LIKE` pattern
+[12:56:40 PM]  User sluke disabled. Path: CN=Luke\, Steven,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (11-Mar-17 5:47:29 PM)
+[12:56:44 PM] User TNMERCV571 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV572 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV573 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV574 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV575 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV576 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV577 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV578 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV579 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV580 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV581 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV582 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV583 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV585 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV584 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV586 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV587 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV588 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV589 matched an entry in the exception file of `LIKE` pattern
+[12:56:44 PM] User TNMERCV590 matched an entry in the exception file of `LIKE` pattern
+[12:56:46 PM]  User dsalazar disabled. Path: CN=Salazar\, David,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (25-Feb-17 3:50:03 PM)
+[12:56:51 PM]  User aberistany disabled. Path: CN=Beristany\, Andrew,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (29-Mar-17 11:00:09 AM)
+[12:56:57 PM]  User ocgtorres disabled. Path: CN=Torres\, Gerbert,OU=Occurance,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (05-Apr-17 9:47:24 AM)
+[12:57:02 PM]  User siegfriedd disabled. Path: CN=Siegfried\, Devon,OU=Operations,OU=IT,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (09-Feb-17 12:14:32 PM)
+[12:57:07 PM]  User bzeo disabled. Path: CN=Zeo\, Brandy,OU=Supervisors,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (28-Feb-17 11:05:51 AM)
+[12:57:13 PM]  User kfritz disabled. Path: CN=Fritz\, Kyler,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Feb-17 3:35:07 PM)
+[12:57:18 PM]  User stecarr disabled. Path: CN=Carr\, Stephanie,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (13-Feb-17 9:09:57 PM)
+[12:57:23 PM]  User laquecooper disabled. Path: CN=Cooper\, Laquesha,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (06-Feb-17 10:21:53 PM)
+[12:57:29 PM]  User travif disabled. Path: CN=Travi\, Fiorella,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Mar-17 1:02:02 AM)
+[12:57:33 PM] User ILBBSOC09 matched an entry in the exception file of `LIKE` pattern
+[12:57:33 PM] User ILBBSOC10 matched an entry in the exception file of `LIKE` pattern
+[12:57:33 PM] User ILBBSOC12 matched an entry in the exception file of `LIKE` pattern
+[12:57:34 PM]  User meubanks disabled. Path: CN=Eubanks\, Matthew,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (04-Feb-17 3:53:33 PM)
+[12:57:40 PM]  User abynum disabled. Path: CN=Bynum\, Amy,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (19-Mar-17 9:41:13 AM)
+[12:57:44 PM] User TNMEPROBRES507 matched an entry in the exception file of `LIKE` pattern
+[12:57:44 PM] User TNMEPROBRES510 matched an entry in the exception file of `LIKE` pattern
+[12:57:45 PM]  User pwebb disabled. Path: CN=Webb\, Paula,OU=Inventory Control,OU=Warehouse,OU=TNME,OU=Tennessee,DC=innotrac,DC=com Last Logon:  (22-Feb-17 9:29:25 AM)
+[12:57:50 PM]  User ocngcmejia disabled. Path: CN=Cordova Mejia\, Nestor,OU=Occurance,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (07-Mar-17 11:12:18 AM)
+[12:57:54 PM] User TNMEOVER502 matched an entry in the exception file of `LIKE` pattern
+[12:57:55 PM]  User vkiphart disabled. Path: CN=Kiphart\, Vincent,OU=Managers,OU=Office,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (07-Nov-16 1:03:20 PM)
+[12:57:59 PM] User ILBBSOCS01 matched an entry in the exception file of `LIKE` pattern
+[12:57:59 PM] User Cardman01 matched an entry in the exception file of `LIKE` pattern
+[12:57:59 PM] User Cardpack86 matched an entry in the exception file of `LIKE` pattern
+[12:57:59 PM] User Cardman03 matched an entry in the exception file of `LIKE` pattern
+[12:58:01 PM]  User ccsshepher disabled. Path: CN=Shepherd\, Shanique,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (28-Jan-17 3:30:44 PM)
+[12:58:06 PM]  User cmcdaniels disabled. Path: CN=McDaniels\, Craig,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (14-Feb-17 5:38:21 PM)
+[12:58:12 PM]  User sslade disabled. Path: CN=Slade\, Sherri,OU=Human Resources,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (24-Mar-17 9:27:19 AM)
+[12:58:16 PM] User Cardpack88 matched an entry in the exception file of `LIKE` pattern
+[12:58:16 PM] User Cardpack87 matched an entry in the exception file of `LIKE` pattern
+[12:58:17 PM]  User ishine disabled. Path: CN=Shine\, Israel,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (29-Mar-17 9:52:58 PM)
+[12:58:21 PM] User ILBBSOCS10 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSOCS12 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSPARE02 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBREP01 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSLA01 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSOCS09 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack89 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ilbbwil01 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack92 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack91 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack90 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ilbbrtn14 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR11 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTRW01 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR14 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR13 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR07 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR10 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSTR09 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBRECPTIONIST matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack93 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack94 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User ILBBSPARE01 matched an entry in the exception file of `LIKE` pattern
+[12:58:21 PM] User Cardpack95 matched an entry in the exception file of `LIKE` pattern
+[12:58:22 PM]  User chrisandrews disabled. Path: CN=Andrews\, Christian,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (06-Mar-17 11:25:24 AM)
+[12:58:28 PM]  User abishop disabled. Path: CN=Bishop\, Ashley,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (05-Feb-17 8:54:41 PM)
+[12:58:33 PM]  User pdunn disabled. Path: CN=Dunn\, Patricia,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (08-Feb-17 9:53:25 PM)
+[12:58:39 PM]  User ssahadeo disabled. Path: CN=Sahadeo\, Sasha-Kay,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Mar-17 9:26:34 PM)
+[12:58:43 PM] User Cardman04 matched an entry in the exception file of `LIKE` pattern
+[12:58:43 PM] User Cardman06 matched an entry in the exception file of `LIKE` pattern
+[12:58:43 PM] User Cardpack96 matched an entry in the exception file of `LIKE` pattern
+[12:58:43 PM] User Cardpack97 matched an entry in the exception file of `LIKE` pattern
+[12:58:43 PM] User Cardpack98 matched an entry in the exception file of `LIKE` pattern
+[12:58:43 PM] User ILBBRTN13 matched an entry in the exception file of `LIKE` pattern
+[12:58:44 PM]  User bmartin disabled. Path: CN=Martin\, Brandon,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (27-Feb-17 10:54:24 AM)
+[12:58:48 PM] User cardpack99 matched an entry in the exception file of `LIKE` pattern
+[12:58:49 PM]  User jhowland disabled. Path: CN=Howland\, Jesse,OU=Security,OU=Office,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (07-Feb-17 4:32:11 AM)
+[12:58:53 PM] User ILBBSPARE04 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE501 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE502 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE503 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE504 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE505 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE506 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE507 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE508 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE509 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE510 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE511 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE512 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE513 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE514 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE515 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE516 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE517 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE518 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE519 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE520 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE521 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE522 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE523 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMESINGLE524 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User ILBBSPARE05 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User ILBBSPARE06 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMEHSPEED501 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMEPROBRES519 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMEPROBRES520 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMEPROBRES521 matched an entry in the exception file of `LIKE` pattern
+[12:58:53 PM] User TNMEPROBRES522 matched an entry in the exception file of `LIKE` pattern
+[12:58:55 PM]  User elsbrinkma disabled. Path: CN=Brinkmann\, Shandi,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (16-Feb-17 1:11:57 PM)
+[12:58:59 PM] User Cardcmdctr04 matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User Cardcmdctr06 matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User TNMEPICKSUPA matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User TNMEPODSUP matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User TNMESHIPSUP matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User TNMEPICKSUPB matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User tnmetest matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User ILBBWOW01 matched an entry in the exception file of `LIKE` pattern
+[12:58:59 PM] User Cardman10 matched an entry in the exception file of `LIKE` pattern
+[12:59:00 PM]  User kjuanchi disabled. Path: CN=Juanchi\, Kacy,OU=Security,OU=Office,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (01-Mar-17 11:20:07 AM)
+[12:59:06 PM]  User cfransko disabled. Path: CN=Fransko\, Christopher,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (01-Mar-17 2:42:51 PM)
+[12:59:11 PM]  User emontoya disabled. Path: CN=Montoya\, Ernest,OU=Arris,OU=Call Center,OU=Client Services,OU=Office,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  (01-Apr-17 4:25:15 PM)
+[12:59:15 PM] User Cardman11 matched an entry in the exception file of `LIKE` pattern
+[12:59:16 PM]  User mmanjunath disabled. Path: CN=Manjunath\, Manju,OU=Development,OU=IT,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  (16-Mar-17 1:30:50 AM)
+[12:59:22 PM]  User elmdutton disabled. Path: CN=Dutton\, Maura,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (15-Mar-17 4:11:32 PM)
+[12:59:27 PM]  User elaperks disabled. Path: CN=Perks\, Ashley,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (29-Mar-17 5:10:06 PM)
+[12:59:32 PM]  User elaallbrig disabled. Path: CN=Allbright\, Abby,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (16-Mar-17 2:19:29 PM)
+[12:59:38 PM]  User elmlane disabled. Path: CN=Lane\, Maggie,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (15-Mar-17 5:44:41 PM)
+[12:59:43 PM]  User msengako disabled. Path: CN=Ngako\, Eric,OU=MS Clientlogic,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (28-Mar-17 8:17:38 AM)
+[12:59:47 PM] User Cardaudit01 matched an entry in the exception file of `LIKE` pattern
+[12:59:47 PM] User Cardaudit03 matched an entry in the exception file of `LIKE` pattern
+[12:59:48 PM]  User frange disabled. Path: CN=Range\, Felton,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (08-Mar-17 11:53:44 AM)
+[12:59:54 PM]  User ctriest disabled. Path: CN=Triest\, Carley,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (03-Apr-17 7:04:14 PM)
+[1:00:01 PM]  User oceecrivas disabled. Path: CN=Rivas\, Edwin,OU=Sylmark,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (06-Feb-17 10:01:38 AM)
+[1:00:05 PM] User C2ASOS52 matched an entry in the exception file of `LIKE` pattern
+[1:00:07 PM]  User mgacoub disabled. Path: CN=Gacoub\, Maha,OU=Associates,OU=Warehouse,OU=ILBB,OU=Illinois,DC=innotrac,DC=com Last Logon:  (13-Mar-17 5:45:22 PM)
+[1:00:14 PM]  User karroyo disabled. Path: CN=Arroyo\, Karen,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (10-Mar-17 1:55:09 PM)
+[1:00:20 PM]  User dmatos disabled. Path: CN=Matos\, Daniel,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (04-Feb-17 7:02:37 PM)
+[1:00:26 PM]  User ctroescher disabled. Path: CN=Troescher\, Christopher,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (14-Feb-17 2:49:06 PM)
+[1:00:31 PM] User ILBBWOW05 matched an entry in the exception file of `LIKE` pattern
+[1:00:32 PM]  User bolanoso disabled. Path: CN=Bolanos\, Oscar,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (12-Mar-17 8:52:25 AM)
+[1:00:38 PM]  User eblinga disabled. Path: CN=Ebling\, Alison,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (27-Feb-17 11:26:59 AM)
+[1:00:44 PM]  User dpuckette disabled. Path: CN=Puckette\, Dana,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (17-Feb-17 1:49:29 PM)
+[1:00:51 PM]  User aembree disabled. Path: CN=Embree\, Abby,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (15-Mar-17 10:33:31 AM)
+[1:00:59 PM]  User tomole disabled. Path: CN=Omole\, Temitope,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  (23-Mar-17 4:30:45 PM)
+[1:01:04 PM]  User ccaechow disabled. Path: CN=Ewing-Chow\, Aidan,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (24-Mar-17 4:31:36 PM)
+[1:01:13 PM]  User ccmramgola disabled. Path: CN=Ramgolam\, Mala,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (23-Mar-17 2:51:39 PM)
+[1:01:18 PM]  User dgjrico disabled. Path: CN=Rico\, Johanna,OU=DEMG,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (16-Mar-17 5:15:48 PM)
+[1:01:24 PM]  User eldterlits disabled. Path: CN=Terlitsky\, Danica,OU=Elloquii,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (28-Mar-17 8:55:16 AM)
+[1:01:29 PM]  User sgeiger disabled. Path: CN=Geiger\, Sarah,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (15-Mar-17 1:31:58 PM)
+[1:01:35 PM]  User tnorah disabled. Path: CN=Norah\, Tony,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  (06-Mar-17 12:14:12 AM)
+[1:01:41 PM]  User ocjegpriet disabled. Path: CN=Garcia Prieto\, Jose Eduardo,OU=Occurance,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (01-Apr-17 9:54:37 AM)
+[1:01:47 PM]  User ocjecgomez disabled. Path: CN=Cruz Gomez\, Jose Ernesto,OU=Occurance,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (28-Feb-17 12:15:59 PM)
+[1:01:55 PM]  User ccdsmith disabled. Path: CN=Smith\, DeQuan,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (13-Mar-17 11:11:15 AM)
+[1:02:02 PM]  User cckleitch disabled. Path: CN=Leitch\, Katifa,OU=Charming Charlie,OU=Client Logons,OU=Reno,DC=innotrac,DC=com Last Logon:  (13-Mar-17 11:13:37 AM)
+[1:02:07 PM] User ILRVEVE04 matched an entry in the exception file of `LIKE` pattern
+[1:02:07 PM] User ILRVEVE07 matched an entry in the exception file of `LIKE` pattern
+[1:02:07 PM] User ilrveve01 matched an entry in the exception file of `LIKE` pattern
+[1:02:08 PM]  User dhoward disabled. Path: CN=Howard\, Daija,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  (29-Mar-17 9:57:13 PM)
+[1:02:12 PM] User c2asos53 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos54 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos56 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos55 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos57 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos59 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos58 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos60 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos61 matched an entry in the exception file of `LIKE` pattern
+[1:02:12 PM] User c2asos62 matched an entry in the exception file of `LIKE` pattern
+[1:02:13 PM]  User aqueisi disabled. Path: CN=Queisi\, Asrar,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  ()
+[1:02:19 PM]  User coambrose disabled. Path: CN=Ambrose\, Cody,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  ()
+[1:02:25 PM]  User slcantler disabled. Path: CN=Cantler\, Stephanie,OU=RT,OU=CSR,OU=Call Center,OU=FLMB,OU=Florida,DC=innotrac,DC=com Last Logon:  ()
+[1:02:31 PM]  User bkent disabled. Path: CN=Kent\, Brandon,OU=Production Support,OU=KOP,DC=innotrac,DC=com Last Logon:  ()
+[1:02:36 PM]  User svcCFGAdmin disabled. Path: CN=svcCFGAdmin,OU=Service Accounts,OU=IT,OU=Office,OU=GANC,OU=Georgia,DC=innotrac,DC=com Last Logon:  ()
+[1:02:42 PM]  User abyrd disabled. Path: CN=Byrd\, Anthony,OU=Associates,OU=Warehouse,OU=COPU,OU=Colorado,DC=innotrac,DC=com Last Logon:  ()
+[1:02:47 PM]  User sjelegat disabled. Path: CN=Jelegat\, Selly,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  ()
+[1:02:53 PM]  User krobinson disabled. Path: CN=Robinson\, Kaleigh,OU=Associates,OU=Warehouse,OU=OHGP,OU=Ohio,DC=innotrac,DC=com Last Logon:  ()
+[1:02:59 PM]  User staracec disabled. Path: CN=Starace\, Charles,OU=Accounting,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  ()
+[1:03:06 PM]  User suhayes disabled. Path: CN=Hayes\, Susan,OU=Accounting,OU=Office,OU=GAJC,OU=Georgia,DC=innotrac,DC=com Last Logon:  ()
+[1:03:11 PM] User crodela1 has not logged in and the account is less than 10 old. whenCreated date is 01-Jun-17 11:40:51 AM
+[1:03:11 PM] User fhollander has not logged in and the account is less than 10 old. whenCreated date is 01-Jun-17 11:57:31 AM
+[1:03:11 PM] User cmarcos has not logged in and the account is less than 10 old. whenCreated date is 02-Jun-17 8:11:31 AM
+[1:03:11 PM] User rpittman has not logged in and the account is less than 10 old. whenCreated date is 02-Jun-17 10:56:24 AM
+[1:03:11 PM] User dheadley has not logged in and the account is less than 10 old. whenCreated date is 02-Jun-17 8:12:55 PM
+
+[1:03:11 PM] ============================================================
+[1:03:11 PM] 196 users are requiring removal / disabling
+[1:03:11 PM] 1307 users were skipped for matching the exception list
+[1:03:11 PM] 1412 users were already disabled and skipped
+
+[1:03:11 PM] ADUM Debug Log File -- End: 05-Jun-17 1:03:11 PM
+[1:03:11 PM] Total Run Time: 2180 in seconds
+[1:03:11 PM] ============================================================
