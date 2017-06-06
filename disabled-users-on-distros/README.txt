@@ -1,0 +1,1 @@
+script that will review user AD accounts that are disabled, and check to see if they are on any distribution lists.  generate a report that is emailed out to support teams for proper clean-up.  just good house keep to clean up disabled users.
