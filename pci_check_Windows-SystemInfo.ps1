@@ -1,21 +1,21 @@
 ﻿# ***************************************************************************
 # * Windows Script                                                          *
 # * Run this local                                                          *
+# * v.20 - hostname_#filename#.csv
 # ***************************************************************************
 clear # just like the defibrillator paddle prep :-)
 
 # Quick and Dirty error handling will fine tune after functional
-$ErroractionPreference = "Silentlycontinue"
+#$ErroractionPreference = "Silentlycontinue"
 
 $Sname = hostname
 
 # IP Addresses
-$IPFile = New-Item -type file -force $SName_"IPFile-Out.csv" #/System Information Out File
+$IPFile = New-Item -type file -force "$SName_IPFile-Out.csv" #/System Information Out File
 $IPFileEntry = '"IP"' + ","
 $IPFileEntry = $IPFileEntry + '"' + "Family" + '"'
 $IPFileEntry | Out-File $IPFile -encoding ASCII -append
 
-# [System.Net.Dns]::GetHostAddresses($Sname) | select-object IPAddressToString -expandproperty  IPAddressToString | out-file $IPFile -encoding ASCII -append
 [System.Net.Dns]::GetHostAddresses($Sname) | Foreach-object {
     $AddFam = $_.AddressFamily
     $Add6Multi = $_.IsIPv6Multicast
@@ -28,7 +28,7 @@ $IPFileEntry | Out-File $IPFile -encoding ASCII -append
     $IPInfoEntry | Out-File $IPFile -encoding ASCII -append}
 
 # System Information File Out
-$SysFile = New-Item -type file -force $SName_"SysInfo-Out-v19.csv" #/System Information Out File
+$SysFile = New-Item -type file -force "$SName_SysInfo-Out.csv" #/System Information Out File
 $SysInfoEntry = '"System"'
 # $SysInfoEntry = $SysInfoEntry + "," + '"IP"'
 $SysInfoEntry = $SysInfoEntry + "," + '"AV Name"'
@@ -65,7 +65,7 @@ $SysInfoEntry | Out-File $SysFile -encoding ASCII -append # Write Header
 #********************************************************
 
 # Patch File Out
-$PFile = New-Item -type file -force $SName_"PchInfo-Out.csv" # Patch Information Out File
+$PFile = New-Item -type file -force "$SName_PchInfo-Out.csv" # Patch Information Out File
 $PatchEntry = '"System"' # Server/System
 $PatchEntry = $PatchEntry + "," + '"Patch ID"'
 $PatchEntry = $PatchEntry + "," + '"Patch Description"'
@@ -74,7 +74,7 @@ $PatchEntry | Out-File $PFile -encoding ASCII -append
 #****************************************************
 
 # Services File Out
-$SFile = New-Item -type file -force $SName_"SvcInfo-Out.csv" # Service Information Out File
+$SFile = New-Item -type file -force "$SName_SvcInfo-Out.csv" # Service Information Out File
 $ServiceEntry = '"System"' # Server/System
 $ServiceEntry = $ServiceEntry + "," + '"Status"'
 $ServiceEntry = $ServiceEntry + "," + '"Service"'
@@ -83,7 +83,7 @@ $ServiceEntry | Out-File $SFile -encoding ASCII -append
 #******************************************************
 
 # Shares File Out
-$SHFile = New-Item -type file -force $SName_"ShInfo-Out.csv" #/ Share Information Out File
+$SHFile = New-Item -type file -force "$SName_ShInfo-Out.csv" #/ Share Information Out File
 $ShareEntry = '"System"'   # Server/System
 $ShareEntry = $ShareEntry + "," + '"Name"'
 $ShareEntry = $ShareEntry + "," + '"Path"'
@@ -92,7 +92,7 @@ $ShareEntry | Out-File $ShFile -encoding ASCII -append
 #*****************************************************
 
 # Application Versions File Out
-$AppFile = New-Item -type file -force $SName_"AppInfo-Out.csv" #/ App Versions Information Out File
+$AppFile = New-Item -type file -force "$SName_AppInfo-Out.csv" #/ App Versions Information Out File
 $AppEntry = '"System"'  # Server/System
 $AppEntry = $AppEntry + "," + '"Application"'
 $AppEntry = $AppEntry + "," + '"Vendor"'
@@ -103,7 +103,7 @@ $AppEntry | Out-File $AppFile -encoding ASCII -append
 #****************************************************
 
 # Disk File Out
-$DiskFile1 = New-Item -type file -force $SName_"DiskInfo-Out.csv" #/ Disk Information Out File
+$DiskFile1 = New-Item -type file -force "$SName_DiskInfo-Out.csv" #/ Disk Information Out File
 $DiskEntry = '"System"'  # Server/System
 $DiskEntry = $DiskEntry + "," + '"Disk Name"'
 $DiskEntry = $DiskEntry + "," + '"Disk Vol"'
@@ -114,7 +114,7 @@ $DiskEntry | Out-File $DiskFile1 -encoding ASCII -append
 #******************************************************
 
 # Log Permisions
-$LogFile = New-Item -type file -force $SName_"LogInfo-Out.csv" #/ Disk Information Out File
+$LogFile = New-Item -type file -force "$SName_LogInfo-Out.csv" #/ Disk Information Out File
 $LogEntry = '"System"'   # Server/System
 $LogEntry = $LogEntry + "," + '"' + $LogName + '"'
 $LogEntry = $LogEntry + "," + '"' + $LogType + '"'
@@ -128,7 +128,7 @@ $LogEntry | Out-File $LogFile -encoding ASCII -append
 #****************************************************
 
 # Processes Running File Out
-$PsFile = New-Item -type file -force $SName_"PsInfo-Out.csv" # Running Processes Information Out File
+$PsFile = New-Item -type file -force "$SName_PsInfo-Out.csv" # Running Processes Information Out File
 $ProcessEntry = '"System"'
 $ProcessEntry = $ProcessEntry + "," + '"Process ID"'
 $ProcessEntry = $ProcessEntry + "," + '"Process Name"'
@@ -136,7 +136,7 @@ $ProcessEntry | Out-File $PsFile -encoding ASCII -append
 #*******************************************************
 
 # Accounts
-$AcctFile = New-Item -type file -force $SName_"AcctInfo-Out.csv" # Local Accounts Information Out File
+$AcctFile = New-Item -type file -force "$SName_AcctInfo-Out.csv" # Local Accounts Information Out File
 $AcctEntry = '"System"'   # Server/System
 $AcctEntry = $AcctEntry + "," + '"Name"'
 $AcctEntry = $AcctEntry + "," + '"Disabled"'
@@ -148,14 +148,14 @@ $AcctEntry | Out-File $AcctFile -encoding ASCII -append
 #******************************************************
 
 # Groups
-$GrpFile = New-Item -type file -force $SName_"GrpInfo-Out.csv" # Local Accounts Information Out File
+$GrpFile = New-Item -type file -force "$SName_GrpInfo-Out.csv" # Local Accounts Information Out File
 $GroupEntry = '"System"'   # Server/System
 $GroupEntry = $GroupEntry + "," + '"Group"'
 $GroupEntry = $GroupEntry + "," + '"User"'
 $GroupEntry | Out-File $GrpFile -encoding ASCII -append
 
 # Network Adapters
-$NetFile = New-Item -type file -force $SName_"NetInfo-Out.csv" # Network Adapter Information Out File
+$NetFile = New-Item -type file -force "$SName_NetInfo-Out.csv" # Network Adapter Information Out File
 $NetEntry = '"System"' # Server/System
 $NetEntry = $NetEntry + "," + '"Connection Type"'
 $NetEntry = $NetEntry + "," + '"Connection Name"'
@@ -164,7 +164,7 @@ $NetEntry | Out-File $NetFile -encoding ASCII -append
 #**************************************************
 
 # Audit Polciy
-$AudFile = New-Item -type file -force $SName_"AudInfo-Out.csv" # Audit Information Out File
+$AudFile = New-Item -type file -force "$SName_AudInfo-Out.csv" # Audit Information Out File
 $AudEntry = '"System"'
 $AudEntry = $AudEntry + "," + '"Policy"'
 $AudEntry = $AudEntry + "," + '"Setting"'
