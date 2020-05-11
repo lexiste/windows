@@ -62,7 +62,7 @@
 
 -->
 
-<Sysmon schemaversion="4.22">
+<Sysmon schemaversion="4.30">
 	<!--SYSMON META CONFIG-->
 	<HashAlgorithms>md5,sha256</HashAlgorithms> <!-- Both MD5 and SHA256 are the industry-standard algorithms for identifying files -->
 	<CheckRevocation/> <!-- Check loaded drivers, log if their code-signing certificate has been revoked, in case malware stole one to sign a kernel driver -->
@@ -817,7 +817,7 @@
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, PipeName, Image-->
 	<RuleGroup name="" groupRelation="or">
 		<PipeEvent onmatch="include">
-			<!--NOTE: Using incide with no rules means nothing in this section will be logged-->
+			<!--NOTE: Using include with no rules means nothing in this section will be logged-->
 		</PipeEvent>
 	</RuleGroup>
 
@@ -839,8 +839,11 @@
     <!--SYSMON EVENT ID 22 : DNSEvent [DNS Query] -->
         <!--This event generates when a process executes a DNS query, whether the result is successful or fails, cached or not. -->
     
+    
     <!--SYSMON EVENT ID 23 : FileDelete [ file delete was detected ]-->
-
+        <!--Placeholder that we can configure the new Sysmon V11 FileDelete feature to 
+            create archive files just prior to a delete / shred / overwrite action takes
+            place.  Files will be saved to the ArchiveDirectory string -->
 
 	<!--SYSMON EVENT ID 255 : ERROR-->
 		<!--"This event is generated when an error occurred within Sysmon. They can happen if the system is under heavy load
