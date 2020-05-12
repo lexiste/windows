@@ -8,7 +8,8 @@
 ##  provided, allows for calling for data collection with list of hosts in
 ##  for
 param (
-    [string] $computerName #// = $env:COMPUTERNAME
+    [parameter(Mandatory=$true)] [string] $computerName,  ## need to have remote computer passed in
+    [string] $output = "$env:USERPROFILE\Desktop\pci-output" ## if path not passed, use current user desktop
 )
 
 clear 
@@ -16,8 +17,38 @@ clear
 # Quick and Dirty error handling will fine tune after functional
 $ErroractionPreference = "SilentlyContinue"
 
+## try and connect to the remote host, terminate if not responding
+$liveCheck = $null
+Try {
+    $liveCheck = Test-Connection -ComputerName $computerName -Quiet -ErrorAction Stop -Count 2
+    if (! $liveCheck) { 
+        Write-Warning "[!] Could not test connection to host ($computerName).  Terminating script"
+        Exit
+    }
+}
+Catch {
+    $ErrMsg = $_.Exception.Message
+    Write-Warning "[!] Error in network connectivity check to $computerName`n$ErrMsg"
+    Exit
+}
+
+## check for the folder, create if needed
+If (-not (Test-Path -LiteralPath $output)) {
+    Try { 
+        New-Item -Path $output -ItemType Directory -ErrorAction Stop | Out-Null
+    }
+    Catch {
+        Write-Warning "[!] Output directory does not exist, and unable to create ($output).`n $_" -ErrorAction Stop
+        Exit  ## exiting
+    }
+    Write-Host "[+] Created output folder $output where files will be stored"
+}
+Else {
+    Write-Host "[+] Output folder $output already exists.  Any files may be overwritten"
+}
+
 # IP Addresses
-$IPFile = New-Item -type file -force $computerName"_IPFile.csv" # System Information Out File
+$IPFile = New-Item -Path $output -Name $computerName"_IPFile.csv" -Force -ItemType "file" # System Information Out File
 $IPFileEntry = '"IP"' + ","
 $IPFileEntry = $IPFileEntry + '"' + "Family" + '"'
 $IPFileEntry | Out-File $IPFile -encoding ASCII -append
@@ -35,7 +66,7 @@ $IPFileEntry | Out-File $IPFile -encoding ASCII -append
     $IPInfoEntry | Out-File $IPFile -encoding ASCII -append}
 
 # System Information File Out
-$SysFile = New-Item -type file -force $computerName"_SysInfo.csv" # System Information Out File
+$SysFile = New-Item -Path $output -Name $computerName"_SysInfo.csv" -Force -ItemType "file" # System Information Out File
 $SysInfoEntry = '"System"'
 # $SysInfoEntry = $SysInfoEntry + "," + '"IP"'
 $SysInfoEntry = $SysInfoEntry + "," + '"AV Name"'
@@ -72,7 +103,7 @@ $SysInfoEntry | Out-File $SysFile -encoding ASCII -append # Write Header
 #********************************************************
 
 # Patch File Out
-$PFile = New-Item -type file -force $computerName"_PatchInfo.csv" # Patch Information Out File
+$PFile = New-Item -Path $output -Name $computerName"_PatchInfo.csv" -Force -ItemType "file" # Patch Information Out File
 $PatchEntry = '"System"' # Server/System
 $PatchEntry = $PatchEntry + "," + '"Patch ID"'
 $PatchEntry = $PatchEntry + "," + '"Patch Description"'
@@ -81,7 +112,7 @@ $PatchEntry | Out-File $PFile -encoding ASCII -append
 #****************************************************
 
 # Services File Out
-$SFile = New-Item -type file -force $computerName"_SvcInfo.csv" # Service Information Out File
+$SFile = New-Item -Path $output -Name $computerName"_SvcInfo.csv" -Force -ItemType "file" # Service Information Out File
 $ServiceEntry = '"System"' # Server/System
 $ServiceEntry = $ServiceEntry + "," + '"Status"'
 $ServiceEntry = $ServiceEntry + "," + '"Service"'
@@ -90,7 +121,7 @@ $ServiceEntry | Out-File $SFile -encoding ASCII -append
 #******************************************************
 
 # Shares File Out
-$SHFile = New-Item -type file -force $computerName"_ShareInfo.csv" # Share Information Out File
+$SHFile = New-Item -Path $output -Name $computerName"_ShareInfo.csv" -Force -ItemType "file" # Share Information Out File
 $ShareEntry = '"System"'   # Server/System
 $ShareEntry = $ShareEntry + "," + '"Name"'
 $ShareEntry = $ShareEntry + "," + '"Path"'
@@ -99,7 +130,7 @@ $ShareEntry | Out-File $ShFile -encoding ASCII -append
 #*****************************************************
 
 # Application Versions File Out
-$AppFile = New-Item -type file -force $computerName"_AppInfo.csv" # App Versions Information Out File
+$AppFile = New-Item -Path $output -Name $computerName"_AppInfo.csv" -Force -ItemType "file" # App Versions Information Out File
 $AppEntry = '"System"'  # Server/System
 $AppEntry = $AppEntry + "," + '"Application"'
 $AppEntry = $AppEntry + "," + '"Vendor"'
@@ -110,7 +141,7 @@ $AppEntry | Out-File $AppFile -encoding ASCII -append
 #****************************************************
 
 # Disk File Out
-$DiskFile1 = New-Item -type file -force $computerName"_DiskInfo.csv" # Disk Information Out File
+$DiskFile1 = New-Item -Path $output -Name $computerName"_DiskInfo.csv" -Force -ItemType "file" # Disk Information Out File
 $DiskEntry = '"System"'  # Server/System
 $DiskEntry = $DiskEntry + "," + '"Disk Name"'
 $DiskEntry = $DiskEntry + "," + '"Disk Vol"'
@@ -121,7 +152,7 @@ $DiskEntry | Out-File $DiskFile1 -encoding ASCII -append
 #******************************************************
 
 # Log Permisions
-$LogFile = New-Item -type file -force $computerName"_LogInfo.csv" # Disk Information Out File
+$LogFile = New-Item -Path $output -Name $computerName"_LogInfo.csv" -Force -ItemType "file" # Disk Information Out File
 $LogEntry = '"System"'   # Server/System
 $LogEntry = $LogEntry + "," + '"' + $LogName + '"'
 $LogEntry = $LogEntry + "," + '"' + $LogType + '"'
@@ -135,7 +166,7 @@ $LogEntry | Out-File $LogFile -encoding ASCII -append
 #****************************************************
 
 # Processes Running File Out
-$PsFile = New-Item -type file -force $computerName"_PsInfo.csv" # Running Processes Information Out File
+$PsFile = New-Item -Path $output -Name $computerName"_PsInfo.csv" -Force -ItemType "file" # Running Processes Information Out File
 $ProcessEntry = '"System"'
 $ProcessEntry = $ProcessEntry + "," + '"Process ID"'
 $ProcessEntry = $ProcessEntry + "," + '"Process Name"'
@@ -143,7 +174,7 @@ $ProcessEntry | Out-File $PsFile -encoding ASCII -append
 #*******************************************************
 
 # Accounts
-$AcctFile = New-Item -type file -force $computerName"_AcctInfo.csv" # Local Accounts Information Out File
+$AcctFile = New-Item -Path $output -Name $computerName"_AcctInfo.csv" -Force -ItemType "file" # Local Accounts Information Out File
 $AcctEntry = '"System"'   # Server/System
 $AcctEntry = $AcctEntry + "," + '"Name"'
 $AcctEntry = $AcctEntry + "," + '"Disabled"'
@@ -155,14 +186,14 @@ $AcctEntry | Out-File $AcctFile -encoding ASCII -append
 #******************************************************
 
 # Groups
-$GrpFile = New-Item -type file -force $computerName"_GrpInfo.csv" # Local Accounts Information Out File
+$GrpFile = New-Item -Path $output -Name $computerName"_GrpInfo.csv" -Force -ItemType "file" # Local Accounts Information Out File
 $GroupEntry = '"System"'   # Server/System
 $GroupEntry = $GroupEntry + "," + '"Group"'
 $GroupEntry = $GroupEntry + "," + '"User"'
 $GroupEntry | Out-File $GrpFile -encoding ASCII -append
 
 # Network Adapters
-$NetFile = New-Item -type file -force $computerName"_NetInfo.csv" # Network Adapter Information Out File
+$NetFile = New-Item -Path $output -Name $computerName"_NetInfo.csv" -Force -ItemType "file" # Network Adapter Information Out File
 $NetEntry = '"System"' # Server/System
 $NetEntry = $NetEntry + "," + '"Connection Type"'
 $NetEntry = $NetEntry + "," + '"Connection Name"'
@@ -171,7 +202,7 @@ $NetEntry | Out-File $NetFile -encoding ASCII -append
 #**************************************************
 
 # Audit Polciy
-$AudFile = New-Item -type file -force $computerName"_AudInfo.csv" # Audit Information Out File
+$AudFile = New-Item -Path $output -Name $computerName"_AudInfo.csv" -Force -ItemType "file" # Audit Information Out File
 $AudEntry = '"System"'
 $AudEntry = $AudEntry + "," + '"Policy"'
 $AudEntry = $AudEntry + "," + '"Setting"'
@@ -454,10 +485,10 @@ $AudEntry | Out-File $AudFile -encoding ASCII -append
     if ((Get-WmiObject win32_computersystem).partofdomain -eq $true -And $IsDC -ne $True) {
     # ***********************************************************
     # Run RSOP and pull data from XML result to get actual settings for system
-    gpresult / $computerName /X $computerName"_gpresult.xml" /F
+    $gpFile = "{0}\{1}_gpresult.xml" -f $output,$computerName ## easier build then use ....
+    gpresult /S $computerName /X "$gpFile" /F
 
-    [xml]$filecontents = get-content -path gpresult.xml
-
+    [xml]$filecontents = Get-Content -Path "$gpFile"
 
     #$Dom = $filecontents.rsop.ComputerResults.Domain **1-4-15 George Mateaki - inconsistent results.
     $Dom = (Get-WmiObject win32_computersystem).domain
@@ -475,82 +506,76 @@ $AudEntry | Out-File $AudFile -encoding ASCII -append
       #Traverse Each ExtensioinData as XML location changes for some reason
       $filecontents.rsop.ComputerResults.ExtensionData | ForEach-Object {
         $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account | ForEach-Object {
-        switch ($filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].name)
-        {
-        # "MaxRenewAge" {}
-        "LockoutDuration" {
-          $RsopLockOut = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
-          }
-        "MaximumPasswordAge" {
-          $RsopPMaxAge = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
-          }
-        # "MinimumPasswordAge" {}
-        # "ResetLockoutCount" {}
-        # "MaxServiceAge" {}
-        "LockoutBadCount" {
-          $RsopLockBad = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
-          }
-        # "MaxClockSkew" {}
-        # "MaxTicketAge" {}
-        "PasswordHistorySize" {
-          $RsopPhist = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
-          }
-        "MinimumPasswordLength" {
-          $RsopPLength = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
-          }
-        "PasswordComplexity" {
-          $RsopPComplx = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingBoolean
-          }
-        # "ClearTestPassword" {}
-        # "TicketValidateClient" {}
-        # default {}
-        } # End Switch
-
-        $inc = $inc + 1 # Increment index, next item in accounts
-      } # End ForEach-object
-      $inc = 0
-      $inED = $inED + 1
+            switch ($filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].name) {
+                # "MaxRenewAge" {}
+                "LockoutDuration" {
+                    $RsopLockOut = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
+                }
+                "MaximumPasswordAge" {
+                    $RsopPMaxAge = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
+                }
+                # "MinimumPasswordAge" {}
+                # "ResetLockoutCount" {}
+                # "MaxServiceAge" {}
+                "LockoutBadCount" {
+                    $RsopLockBad = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
+                }
+                # "MaxClockSkew" {}
+                # "MaxTicketAge" {}
+                "PasswordHistorySize" {
+                    $RsopPhist = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
+                }
+                "MinimumPasswordLength" {
+                    $RsopPLength = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingNumber
+                }
+                "PasswordComplexity" {
+                    $RsopPComplx = $filecontents.rsop.ComputerResults.ExtensionData[$inED].extension.account[$inc].SettingBoolean
+                }
+                # "ClearTestPassword" {}
+                # "TicketValidateClient" {}
+                # default {}
+            } # End Switch
+            $inc = $inc + 1 # Increment index, next item in accounts
+        } # End ForEach-object
+        $inc = 0
+        $inED = $inED + 1
       } # End ExtensionData ForEachObject
    ############################################################################
     } else {
-    SecEdit /export /cfg cfg.ini
-    # $locsec = get-content cfg.ini
-    # $MinPasAge = $locsec | select-string "MinimumPasswordAge"
-    # $RsopPLength = right($MinPasAge,len($MinPasAge) - 21))
+        $sF = "{0}\{1}_cfg.ini" -f $output,$computerName
+        $sFL = "{0}\{1}_cfg.log" -f $output,$computerName
+        SecEdit /export /cfg "$sF" /log "$sFL" ## easier build then use ....
+        
+        # $locsec = get-content cfg.ini
+        # $MinPasAge = $locsec | select-string "MinimumPasswordAge"
+        # $RsopPLength = right($MinPasAge,len($MinPasAge) - 21))
 
-    Get-Content cfg.ini | Foreach-Object{
-     if ($_.Startswith("LockoutDuration"))
-       {$pass = $_.Split('=')
-        $RsopLockOut = $pass[1]
-       }
-
-     if ($_.Startswith("MaximumPasswordAge"))
-       {$pass = $_.Split('=')
-        $RsopPMaxAge = $pass[1]
-       }
-
-     if ($_.Startswith("LockoutBadCount"))
-       {$pass = $_.Split('=')
-        $RsopLockBad = $pass[1]
-       }
-
-     if ($_.Startswith("PasswordHistorySize"))
-       {$pass = $_.Split('=')
-        $RsopPHist = $pass[1]
-       }
-
-     if ($_.Startswith("MinimumPasswordLength"))
-       {$pass = $_.Split('=')
-        $RsopPLength = $pass[1]
-       }
-
-     if ($_.Startswith("PasswordComplexity"))
-       {$pass = $_.Split('=')
-        $RsopPComplx = $pass[1]
-       }
-
-     } # End of foreach-object
-
+        Get-Content "$sF" | Foreach-Object {
+            if ($_.Startswith("LockoutDuration")) {
+                $pass = $_.Split('=')
+                $RsopLockOut = $pass[1]
+            }
+            if ($_.Startswith("MaximumPasswordAge")) {
+                $pass = $_.Split('=')
+                $RsopPMaxAge = $pass[1]
+            }
+            if ($_.Startswith("LockoutBadCount")) {
+                $pass = $_.Split('=')
+                $RsopLockBad = $pass[1]
+            }
+            if ($_.Startswith("PasswordHistorySize")) {
+                $pass = $_.Split('=')
+                $RsopPHist = $pass[1]
+            }
+            if ($_.Startswith("MinimumPasswordLength")) {
+                $pass = $_.Split('=')
+                $RsopPLength = $pass[1]
+            }
+            if ($_.Startswith("PasswordComplexity")) {
+                $pass = $_.Split('=')
+                $RsopPComplx = $pass[1]
+            }
+         } # End of foreach-object
     } # End of if on Domain or not
 
 
@@ -558,9 +583,9 @@ $AudEntry | Out-File $AudFile -encoding ASCII -append
       $AudPol = auditpol /get /category:*
       $IncA = 0
       $AudPol | ForEach-Object {
-      $AudItem = $AudPol.getvalue($IncA)
-      $IncA = $IncA + 1
-        if ($auditem.startswith("  ")) {
+          $AudItem = $AudPol.getvalue($IncA)
+          $IncA = $IncA + 1
+          if ($auditem.startswith("  ")) {
             $APItemLen = $AudItem.Length
             $AudPolItem = $Auditem.Substring(2,40)
             $AudPolSet = $Auditem.Substring(42)
@@ -568,7 +593,7 @@ $AudEntry | Out-File $AudFile -encoding ASCII -append
             $AudEntry = $AudEntry + "," + '"' + $AudPolItem + '"'
             $AudEntry = $AudEntry + "," + '"' + $AudPolSet + '"'
             $AudEntry | Out-File $AudFile -encoding ASCII -append
-        }
+          }
       } # End for each $AudPol
     #*****************************************************
 
@@ -609,4 +634,4 @@ $AudEntry | Out-File $AudFile -encoding ASCII -append
 # Clean Up
 $RegCon.Close()
 $RegCon.Dispose()
-"Script Complete"
+"Script Complete on $computerName"
