@@ -462,7 +462,9 @@
 	<RuleGroup groupRelation="or">
 		<ProcessAccess onmatch="include">
 			<TargetImage condition="is">C:\windows\system32\lsass.exe</TargetImage> <!-- load for mimikatz type scrapers -->
-			<!--NOTE: Using "include" with no rules means nothing in this section will be logged-->
+		</ProcessAccess>
+		<ProcessAccess onmatch="exclude">
+			<SourceImage condition="is">C:\Program Files (x86)\VMware\VMware Player\vmware-authd.exe</SourceImage> <!-- vmware-authd is extremely noisy -->
 		</ProcessAccess>
 	</RuleGroup>
 
@@ -1006,7 +1008,7 @@
 				<TargetFilename condition="begin with">C:\Windows\SysWOW64\Tasks</TargetFilename>
 				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
 			</Rule>
-			
+
 			<!-- user writable folders -->
 			<Rule groupRelation="and">
 				<TargetFilename condition="contains">\Downloads\</TargetFilename> <!--User Download folder-->
