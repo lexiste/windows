@@ -4,13 +4,15 @@
   Source project:	https://github.com/SwiftOnSecurity/sysmon-config
   Source license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
 
-  Fork version:	10 | Date: 2020-May-04
+  Fork version:	11 | Date: 2020-Jun-03
   Fork author:	Todd Fencl | tfencl[a]radial
   Fork project:	<N/A>
   Fork license:	<N/A>
 
   REQUIRED: Sysmon version 11.0 or highter with the addition of Event ID 23 [ FileDelete ]
-  
+  NOTE: found another great source of information with break-outs for each event type, including matrix mapping to Mitre ATT&CK
+	framework https://github.com/olafhartong/sysmon-modular
+
   REQUIRED: Sysmon version 10.0.4.1 or higher (due to changes in syntax and bug-fixes)
 	https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon
 
@@ -66,6 +68,8 @@
 	<!--SYSMON META CONFIG-->
 	<HashAlgorithms>md5,sha256</HashAlgorithms> <!-- Both MD5 and SHA256 are the industry-standard algorithms for identifying files -->
 	<CheckRevocation/> <!-- Check loaded drivers, log if their code-signing certificate has been revoked, in case malware stole one to sign a kernel driver -->
+	<DnsLookup>False</DnsLookup>
+	<ArchiveDirectory>Sysmon</ArchiveDirectory> <!-- set the location relative to c:\ where files will be preservered -->
 
 	<!-- <ImageLoad/> --> <!-- Would manually force-on ImageLoad monitoring, even without configuration below. Included only documentation. -->
 	<!-- <ProcessAccessConfig/> --> <!-- Would manually force-on ProcessAccess monitoring, even without configuration below. Included only documentation. -->
@@ -81,7 +85,7 @@
 			code signatures to validate, but Sysmon does not support that. Look into AppLocker/WindowsDeviceGuard for whitelisting support. -->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessID, Image, FileVersion, Description, Product, Company, CommandLine, CurrentDirectory, User, LogonGuid, LogonId, TerminalSessionId, IntegrityLevel, Hashes, ParentProcessGuid, ParentProcessId, ParentImage, ParentCommandLine, RuleName-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<ProcessCreate onmatch="exclude">
 			<!--SECTION: Microsoft Windows-->
 			<ParentCommandLine condition="is">"C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" -Embedding</ParentCommandLine>
@@ -239,7 +243,7 @@
 		<!--COMMENT:	[ https://attack.mitre.org/wiki/Technique/T1099 ] -->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image, TargetFilename, CreationUtcTime, PreviousCreationUtcTime-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<FileCreateTime onmatch="include">
 			<Image name="T1099" condition="begin with">C:\Users</Image> <!--Look for timestomping in user area, usually nothing should be doing that here-->
 			<TargetFilename name="T1099" condition="end with">.exe</TargetFilename> <!--Look for backdated executables anywhere-->
@@ -247,7 +251,7 @@
 		</FileCreateTime>
 	</RuleGroup>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<FileCreateTime onmatch="exclude">
 			<Image condition="image">OneDrive.exe</Image> <!--OneDrive constantly changes file times-->
 			<Image condition="image">C:\Windows\system32\backgroundTaskHost.exe</Image>
@@ -270,7 +274,7 @@
 		<!-- https://www.first.org/resources/papers/conf2017/APT-Log-Analysis-Tracking-Attack-Tools-by-Audit-Policy-and-Sysmon.pdf -->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image, User, Protocol, Initiated, SourceIsIpv6, SourceIp, SourceHostname, SourcePort, SourcePortName, DestinationIsIpV6, DestinationIp, DestinationHostname, DestinationPort, DestinationPortName-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<NetworkConnect onmatch="include">
 			<!--Suspicious sources for network-connecting binaries-->
 			<Image name="Usermode" condition="begin with">C:\Users</Image> <!--Tools downloaded by users can use other processes for networking, but this is a very valuable indicator.-->
@@ -351,7 +355,7 @@
 		</NetworkConnect>
 	</RuleGroup>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<NetworkConnect onmatch="exclude">
 			<!--SECTION: Microsoft-->
 			<Image condition="begin with">C:\ProgramData\Microsoft\Windows Defender\Platform\</Image>
@@ -374,14 +378,16 @@
 		<!--COMMENT:	Useful data in building infection timelines.-->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<ProcessTerminate onmatch="include">
 			<Image condition="begin with">C:\Users</Image> <!--Process terminations by user binaries-->
+			<Image condition="begin with">C:\Temp</Image>
+			<Image condition="begin with">C:\Windows\Temp</Image>
 			<Image condition="begin with">\</Image> <!--Devices and VSC shouldn't be executing changes | Credit: @SBousseaden @ionstorm @neu5ron @PerchedSystems [ https://twitter.com/SwiftOnSecurity/status/1133167323991486464 ] -->
 		</ProcessTerminate>
 	</RuleGroup>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<ProcessTerminate onmatch="exclude">
 		</ProcessTerminate>
 	</RuleGroup>
@@ -393,7 +399,7 @@
 		<!--TECHNICAL:	Sysmon will check the signing certificate revocation status of any driver you don't exclude.-->
 
 		<!--DATA: UtcTime, ImageLoaded, Hashes, Signed, Signature, SignatureStatus-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<DriverLoad onmatch="exclude">
 			<Signature condition="contains">microsoft</Signature> <!--Exclude signed Microsoft drivers-->
 			<Signature condition="contains">windows</Signature> <!--Exclude signed Microsoft drivers-->
@@ -406,7 +412,7 @@
 		<!--COMMENT:	[ https://attack.mitre.org/wiki/Technique/T1073 ] [ https://attack.mitre.org/wiki/Technique/T1038 ] [ https://attack.mitre.org/wiki/Technique/T1034 ] -->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image, ImageLoaded, Hashes, Signed, Signature, SignatureStatus-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<ImageLoad onmatch="include">
 			<!--NOTE: Using "include" with no rules means nothing in this section will be logged-->
 		</ImageLoad>
@@ -417,7 +423,7 @@
 		[ https://attack.mitre.org/wiki/Technique/T1055 ] -->
 
 		<!--DATA: UtcTime, SourceProcessGuid, SourceProcessId, SourceImage, TargetProcessId, TargetImage, NewThreadId, StartAddress, StartModule, StartFunction-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<CreateRemoteThread onmatch="exclude">
 			<!--COMMENT: Exclude mostly-safe sources and log anything else.-->
 			<SourceImage condition="is">C:\Windows\system32\wbem\WmiPrvSE.exe</SourceImage>
@@ -441,7 +447,7 @@
 		<!--COMMENT:	You will likely want to set this to a full capture on domain controllers, where no process should be doing raw reads.-->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image, Device-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<RawAccessRead onmatch="include">
 			<!--NOTE: Using "include" with no rules means nothing in this section will be logged-->
 		</RawAccessRead>
@@ -453,7 +459,7 @@
 		<!--COMMENT:	Monitor for processes accessing other process' memory.-->
 
 		<!--DATA: UtcTime, SourceProcessGuid, SourceProcessId, SourceThreadId, SourceImage, TargetProcessGuid, TargetProcessId, TargetImage, GrantedAccess, CallTrace-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<ProcessAccess onmatch="include">
 			<TargetImage condition="is">C:\windows\system32\lsass.exe</TargetImage> <!-- load for mimikatz type scrapers -->
 			<!--NOTE: Using "include" with no rules means nothing in this section will be logged-->
@@ -466,7 +472,7 @@
 		<!--NOTE:	You may not see files detected by antivirus. Other filesystem minifilters, like antivirus, can act before Sysmon receives the alert a file was written.-->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, Image, TargetFilename, CreationUtcTime-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<FileCreate onmatch="include">
 			<TargetFilename name="T1023" condition="contains">\Start Menu</TargetFilename> <!--Windows: Startup links and shortcut modification [ https://attack.mitre.org/wiki/Technique/T1023 ] -->
 			<TargetFilename name="T1165" condition="contains">\Startup\</TargetFilename> <!--Microsoft:Changes to user's auto-launched files and shortcuts-->
@@ -519,7 +525,7 @@
 		</FileCreate>
 	</RuleGroup>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<FileCreate onmatch="exclude">
 			<!--SECTION: Microsoft-->
 			<Image condition="is">C:\Program Files (x86)\EMET 5.5\EMET_Service.exe</Image> <!--Microsoft:EMET: Writes to C:\Windows\AppPatch\-->
@@ -559,7 +565,7 @@
 								Sysmon's wildcard monitoring along with highly-tuned generic strings cuts the rulesets down immensely, compared to doing this in other tools. -->
 
 		<!--DATA: EventType, UtcTime, ProcessGuid, ProcessId, Image, TargetObject, Details (can't filter on), NewName (can't filter on)-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<RegistryEvent onmatch="include">
 			<!--Autorun or Startups-->
 				<!--ADDITIONAL REFERENCE: [ http://www.ghacks.net/2016/06/04/windows-automatic-startup-locations/ ] -->
@@ -696,7 +702,7 @@
 		</RegistryEvent>
 	</RuleGroup>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<RegistryEvent onmatch="exclude">
 		<!--COMMENT:	Remove low-information noise. Often these hide a procress recreating an empty key and do not hide the values created subsequently.-->
 		<!--NOTE:	A lot of noise can be removed by excluding CreateKey events, which are largely innocuous-->
@@ -792,7 +798,7 @@
 			<TargetFilename condition="end with">.vbs</TargetFilename> <!--VisualBasicScripting files-->
 		</FileCreateStreamHash>
 
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<FileCreateStreamHash onmatch="exclude">
 			<TargetFilename condition="end with">.partial</TargetFilename> <!-- 2020-01-20 14:55 -->
 			<TargetFilename condition="end with">.sxx</TargetFilename> <!-- 2020-01-20 14:55 -->
@@ -815,7 +821,7 @@
 		<!--ADDITIONAL REFERENCE: [ https://blog.cobaltstrike.com/2015/10/07/named-pipe-pivoting/ ] -->
 
 		<!--DATA: UtcTime, ProcessGuid, ProcessId, PipeName, Image-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<PipeEvent onmatch="include">
 			<!--NOTE: Using include with no rules means nothing in this section will be logged-->
 		</PipeEvent>
@@ -830,20 +836,188 @@
 		<!--ADDITIONAL REFERENCE: [ https://rawsec.lu/blog/posts/2017/Sep/19/sysmon-v610-vs-wmi-persistence/ ] -->
 
 		<!--DATA: EventType, UtcTime, Operation, User, Name, Type, Destination, Consumer, Filter-->
-	<RuleGroup name="" groupRelation="or">
+	<RuleGroup groupRelation="or">
 		<WmiEvent onmatch="exclude">
 			<!--NOTE: Using exclude with no rules means everything will be logged-->
 		</WmiEvent>
 	</RuleGroup>
 
-    <!--SYSMON EVENT ID 22 : DNSEvent [DNS Query] -->
-        <!--This event generates when a process executes a DNS query, whether the result is successful or fails, cached or not. -->
-    
-    
-    <!--SYSMON EVENT ID 23 : FileDelete [ file delete was detected ]-->
-        <!--Placeholder that we can configure the new Sysmon V11 FileDelete feature to 
-            create archive files just prior to a delete / shred / overwrite action takes
-            place.  Files will be saved to the ArchiveDirectory string -->
+  <!--SYSMON EVENT ID 22 : DNSEvent [DNS Query] -->
+    <!--This event generates when a process executes a DNS query, whether the result is successful or fails, cached or not. -->
+
+
+  <!--SYSMON EVENT ID 23 : FileDelete [ file delete was detected ]-->
+	<!-- TODO: Configure events using the new v11 FileDelete filter. -->
+	<!-- TODO: Define ArchiveDirectory string for path to save copy of files before delete action -->
+	<!-- TODO: Define -->
+
+	<!-- exclude windows services [ 2020-Jun-03 ] -->
+	<RuleGroup groupRelation="or">
+		<FileDelete onmatch="exclude">
+			<User condition="contains any">NETWORK SERVICE; LOCAL SERVICE</User>
+		</FileDelete>
+	</RuleGroup>
+
+	<!-- include system|user writeable folders [ 2020-Jun-03 ] -->
+	<RuleGroup groupRelation="or">
+		<FileDelete onmatch="include">
+			<!-- system writable folders -->
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Intel</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Mozilla</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+			 	<TargetFilename condition="begin with">C:\ProgramData\chocolatey\logs</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\DeviceSync</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\PlayReady</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\User Account Pictures</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Crypto\DSS\MachineKeys</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Crypto\RSA\MachineKeys</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\NetFramework\BreadcrumbStore</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Office\Heartbeat</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\ReportQueue</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Intel</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Mozilla</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\chocolatey\logs</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\DeviceSync</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\PlayReady</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\User Account Pictures</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Crypto\DSS\MachineKeys</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Crypto\RSA\MachineKeys</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\NetFramework\BreadcrumbStore</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Office\Heartbeat</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Windows\WER\ReportArchive</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Windows\WER\ReportQueue</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Users\All Users\Microsoft\Windows\WER\Temp</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\Tasks</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\tracing</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\Registration\CRMLog</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\System32\Tasks</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\System32\spool\drivers\color</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="begin with">C:\Windows\SysWOW64\Tasks</TargetFilename>
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			
+			<!-- user writable folders -->
+			<Rule groupRelation="and">
+				<TargetFilename condition="contains">\Downloads\</TargetFilename> <!--User Download folder-->
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+			<Rule groupRelation="and">
+				<TargetFilename condition="contains">\AppData\Local\Microsoft\Windows\INetCache\Content.Outlook\</TargetFilename> <!--Microsoft Outlook temp working folder-->
+				<TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
+			</Rule>
+		</FileDelete>
+	</RuleGroup>
 
 	<!--SYSMON EVENT ID 255 : ERROR-->
 		<!--"This event is generated when an error occurred within Sysmon. They can happen if the system is under heavy load
